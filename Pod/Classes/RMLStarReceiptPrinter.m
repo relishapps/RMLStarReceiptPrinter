@@ -17,6 +17,10 @@
 
 @implementation RMLStarReceiptPrinter
 
++ (NSString *)starIOVersion {
+    return [SMPort StarIOVersion];
+}
+
 - (instancetype)init {
     self = [super init];
     

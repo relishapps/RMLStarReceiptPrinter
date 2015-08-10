@@ -24,7 +24,9 @@
     
     RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
     
-    [printer sendText:[NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter ]]];
+    [printer sendText:[NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter starIOVersion]]];
+    
+    self.versionLabel.text = [NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter starIOVersion]];
 }
 
 @end

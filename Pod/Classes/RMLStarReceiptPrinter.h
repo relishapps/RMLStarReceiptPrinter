@@ -36,6 +36,8 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterTextAlignment) {
 
 @interface RMLStarReceiptPrinter : NSObject
 
++ (NSString *)starIOVersion;
+
 - (instancetype)init;
 - (RMLStarReceiptPrinterStatus)status;
 
