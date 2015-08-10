@@ -519,10 +519,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/StarIO",
+					/Users/pawel/Documents/iOS,
+					apps/RMLStarReceiptPrinter/Pod/StarIO,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Prefix.pch";
 				INFOPLIST_FILE = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -539,10 +542,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/StarIO",
+					/Users/pawel/Documents/iOS,
+					apps/RMLStarReceiptPrinter/Pod/StarIO,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Prefix.pch";
 				INFOPLIST_FILE = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
