@@ -9,26 +9,22 @@
 
 Pod::Spec.new do |s|
   s.name             = "RMLStarReceiptPrinter"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of RMLStarReceiptPrinter."
+  s.version          = "1.0.0"
+  s.summary          = "Wrapper for StarIO SDK"
   s.description      = <<-DESC
-                       An optional longer description of RMLStarReceiptPrinter
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       RMLStarReceiptPrinter makes printing receipts a breeze!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RMLStarReceiptPrinter"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/relishmedia/RMLStarReceiptPrinter"
   s.license          = 'MIT'
   s.author           = { "Pawel Decowski" => "pawel.decowski@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/relishmedia/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/relishmedia'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-s.vendored_frameworks = 'Pod/Frameworks/StarIO.framework'
+  s.vendored_frameworks = 'Pod/Frameworks/StarIO.framework'
   s.resource_bundles = {
     'RMLStarReceiptPrinter' => ['Pod/Assets/*.png']
   }
