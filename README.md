@@ -1,4 +1,3 @@
-
 [![CI Status](http://img.shields.io/travis/Pawel Decowski/RMLStarReceiptPrinter.svg?style=flat)](https://travis-ci.org/Pawel Decowski/RMLStarReceiptPrinter)
 [![Version](https://img.shields.io/cocoapods/v/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 [![License](https://img.shields.io/cocoapods/l/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
@@ -19,10 +18,8 @@ it, simply add the following line to your Podfile:
 pod "RMLStarReceiptPrinter"
 ```
 
-## Author
-
-Pawel Decowski, pawel.decowski@gmail.com
-
 ## License
 
 RMLStarReceiptPrinter is available under the MIT license. See the LICENSE file for more info.
+
+© 2015 Relish Media Ltd
