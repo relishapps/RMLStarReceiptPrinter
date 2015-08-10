@@ -14,8 +14,8 @@
 
 // RMLStarReceiptPrinter
 #define COCOAPODS_POD_AVAILABLE_RMLStarReceiptPrinter
-#define COCOAPODS_VERSION_MAJOR_RMLStarReceiptPrinter 0
-#define COCOAPODS_VERSION_MINOR_RMLStarReceiptPrinter 1
+#define COCOAPODS_VERSION_MAJOR_RMLStarReceiptPrinter 1
+#define COCOAPODS_VERSION_MINOR_RMLStarReceiptPrinter 0
 #define COCOAPODS_VERSION_PATCH_RMLStarReceiptPrinter 0
 
 // Specta
@@ -23,10 +23,4 @@
 #define COCOAPODS_VERSION_MAJOR_Specta 1
 #define COCOAPODS_VERSION_MINOR_Specta 0
 #define COCOAPODS_VERSION_PATCH_Specta 3
-
-// starIOPrintSDK
-#define COCOAPODS_POD_AVAILABLE_starIOPrintSDK
-#define COCOAPODS_VERSION_MAJOR_starIOPrintSDK 3
-#define COCOAPODS_VERSION_MINOR_starIOPrintSDK 14
-#define COCOAPODS_VERSION_PATCH_starIOPrintSDK 1
 

@@ -1,6 +1,0 @@
-framework module starIOPrintSDK {
-  umbrella header "Pods-RMLStarReceiptPrinter_Example-starIOPrintSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

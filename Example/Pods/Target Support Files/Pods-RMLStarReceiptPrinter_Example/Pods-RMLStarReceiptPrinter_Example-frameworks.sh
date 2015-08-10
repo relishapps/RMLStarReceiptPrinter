@@ -49,9 +49,7 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'RMLStarReceiptPrinter.framework'
-  install_framework 'starIOPrintSDK.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'RMLStarReceiptPrinter.framework'
-  install_framework 'starIOPrintSDK.framework'
 fi

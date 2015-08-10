@@ -7,7 +7,6 @@ end
 
 target 'RMLStarReceiptPrinter_Tests', :exclusive => true do
   pod "RMLStarReceiptPrinter", :path => "../"
-
   pod 'Specta'
   pod 'Expecta'
 end

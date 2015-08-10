@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20CBDCEBE48A864034D62D94"
+               BlueprintIdentifier = "F748036F51BDBE267108040D"
                BuildableName = "RMLStarReceiptPrinter.framework"
                BlueprintName = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,1 +1,0 @@
-../../../starIOPrintSDK/Distributables/StarIO.framework/Versions/Current/Headers/Lock.h
