@@ -18,6 +18,7 @@
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
+  "vendored_frameworks": "Pod/StarIO/StarIO.framework",
   "resource_bundles": {
     "RMLStarReceiptPrinter": [
       "Pod/Assets/*.png"
