@@ -828,8 +828,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pawel/Documents/iOS,
-					apps/RMLStarReceiptPrinter/Pod/Frameworks,
+					"/Users/pawel/Documents/iOS apps/RMLStarReceiptPrinter/Pod/Frameworks\",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Info.plist";
@@ -887,8 +886,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pawel/Documents/iOS,
-					apps/RMLStarReceiptPrinter/Pod/Frameworks,
+					"/Users/pawel/Documents/iOS apps/RMLStarReceiptPrinter/Pod/Frameworks",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -955,8 +953,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pawel/Documents/iOS,
-					apps/RMLStarReceiptPrinter/Pod/Frameworks,
+					"/Users/pawel/Documents/iOS apps/RMLStarReceiptPrinter/Pod/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Info.plist";

@@ -22,7 +22,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E522D7331B791B1400274A89 /* StarIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E522D7321B791B1400274A89 /* StarIO.framework */; };
 		FB66B40F687DCCE3B33A1383 /* Pods_RMLStarReceiptPrinter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866043E591AA1AF28CB32CBC /* Pods_RMLStarReceiptPrinter_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E522D7331B791B1400274A89 /* StarIO.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -518,8 +516,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pawel/Documents/iOS,
-					apps/RMLStarReceiptPrinter/Pod/Frameworks,
+					"/Users/pawel/Documents/iOS apps/RMLStarReceiptPrinter/Pod/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Prefix.pch";
@@ -538,8 +535,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pawel/Documents/iOS,
-					apps/RMLStarReceiptPrinter/Pod/Frameworks,
+					"/Users/pawel/Documents/iOS apps/RMLStarReceiptPrinter/Pod/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Prefix.pch";
