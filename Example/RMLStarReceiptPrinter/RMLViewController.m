@@ -7,6 +7,7 @@
 //
 
 #import "RMLViewController.h"
+#import "RMLStarReceiptPrinter.h"
 
 @interface RMLViewController ()
 
