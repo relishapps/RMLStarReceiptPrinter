@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RMLStarReceiptPrinter"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "A wrapper for StarIO"
   s.description      = <<-DESC
                        RMLStarReceipt printer is a wrapper for StarIO that makes it easy to send commands to the printer.
