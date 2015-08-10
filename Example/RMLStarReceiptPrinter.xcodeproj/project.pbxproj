@@ -40,7 +40,7 @@
 		3CCB3876E07C1FEE1C06997E /* Pods_RMLStarReceiptPrinter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9503C4FE7EA70333F65C49 /* Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter_Tests/Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		52599F9B53BF6AB6D12F5E2F /* Pods-RMLStarReceiptPrinter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter_Example/Pods-RMLStarReceiptPrinter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* RMLStarReceiptPrinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = RMLStarReceiptPrinter.app; path = RMLStarReceiptPrinter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* RMLStarReceiptPrinter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMLStarReceiptPrinter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -119,7 +119,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* RMLStarReceiptPrinter.app */,
+				6003F58A195388D20070C39A /* RMLStarReceiptPrinter_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -213,7 +213,7 @@
 			);
 			name = RMLStarReceiptPrinter_Example;
 			productName = RMLStarReceiptPrinter;
-			productReference = 6003F58A195388D20070C39A /* RMLStarReceiptPrinter.app */;
+			productReference = 6003F58A195388D20070C39A /* RMLStarReceiptPrinter_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* RMLStarReceiptPrinter_Tests */ = {
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Pawel Decowski";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8D3PUE28S6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -512,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Prefix.pch";
 				INFOPLIST_FILE = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Info.plist";
@@ -527,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Prefix.pch";
 				INFOPLIST_FILE = "RMLStarReceiptPrinter/RMLStarReceiptPrinter-Info.plist";

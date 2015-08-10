@@ -10,19 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "RMLStarReceiptPrinter"
   s.version          = "0.1.0"
-  s.summary          = "A short description of RMLStarReceiptPrinter."
+  s.summary          = "A wrapper for StarIO"
   s.description      = <<-DESC
-                       An optional longer description of RMLStarReceiptPrinter
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       RMLStarReceipt printer is a wrapper for StarIO that makes it easy to send commands to the printer.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RMLStarReceiptPrinter"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/relishmedia/RMLStarReceiptPrinter"
   s.license          = 'MIT'
   s.author           = { "Pawel Decowski" => "pawel.decowski@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/relishmedia/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/relishmedia>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

@@ -1,0 +1,1724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A5A4C8091A1670F9AF753E /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D4A564080A9B3187A55BCF /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0B823448015BE98977E8D633 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = E3389ACC4CE9297E03F8E083 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0C7F339DC001690F28AB0702 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F6B6970D5D0815D87AF55E /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0CA8E2FD81E561593A63505F /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE357BB263AD8BC4C9CFAE0 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1122997339670C2CFA788E3F /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 597FE157E6E6DE35509F3575 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15FE1D410DD6AE14344A867B /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA88FD91270475E503756C /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1605DF12A82402A015C17DAF /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 520D4F04C0488EF5CA78B82E /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		171EF5A6C7EFECCD64F7D467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA6876E7C434C9690ED55 /* Foundation.framework */; };
+		191BF66F14B40B8F5B21620D /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D474E02CBBF62B4CA2FD6 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1AC02903AA5AD98D51F16617 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = FD4A79E8B13BC028C2BEBA2A /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C86D4285DC7C19D02029988 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 7491D699CB54974A072156CA /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		214CB8A9A3D7D846AD933366 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31951A329CCEFA8A28F23F5F /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m */; };
+		2179C3B1EE28D978346BDFAA /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FA447098F2A5F43A632262 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2302435A407D72D8023C500F /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF51D0F4A4923A32C30DC02 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E323496C364FE79294FD7E /* Pods-RMLStarReceiptPrinter_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC2E969FBC2A3B5A1A3909C /* Pods-RMLStarReceiptPrinter_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25931F47F5993AE842624801 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B2307AEB426C43E932DB68F5 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27943B7783034D986D5AB3D5 /* Pods-RMLStarReceiptPrinter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D065B59C0FCC55754721D5 /* Pods-RMLStarReceiptPrinter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2843E1E6ECDDB4B3479C057E /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = F666D1CD81C8EE53CD28933C /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A5CE305DBDF2B0EF2D6A292 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9C9797088B0388D3E50B06 /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D68DA9C8854B95B95FA65E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1818DF29544235F833E95E8D /* XCTest.framework */; };
+		2E3A474CADE2A9D775F0079F /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1486D967354D9EB373C0BACC /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30C4B04DFCFF060CCD64F185 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F65D853098F23FC6F1DC7B4 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31C478005839BADBFB67DEED /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC0A44936BF80FFC4A3C6BE /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		364613780E90950BC35AFF6A /* Pods-RMLStarReceiptPrinter_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEEB760AA02F30FA345736B /* Pods-RMLStarReceiptPrinter_Tests-Expecta-dummy.m */; };
+		37DCAACDA2C829CFF09CD462 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFAC5F86216DB11D457D6135 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		380C13E50C6F0906355AD5B5 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 550039D678972D7D6219293A /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		392E2BD09CE7A662C3B817E0 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = AE58A198C96AFFFCE6194351 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A936B81F11D5008FBAAEFE9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1818DF29544235F833E95E8D /* XCTest.framework */; };
+		3B2EA0E9B8CA8939B894E8EE /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = E5418ED38C4AC52F09C9F2F0 /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B71EDD2B8D764655705D216 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2FF64B23E5EA39A8ED7F10 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FDD886291261484125501AE /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 13DF0FCC9E83A74BF8327553 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404FC7D54A2A3A7115CE915B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA6876E7C434C9690ED55 /* Foundation.framework */; };
+		44673AAE666CF64B5A15D999 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6208122436ABEEF4C3AD /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-dummy.m */; };
+		4650FF64F4E64CEB3C42210F /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = B9099C848D4F5ED70D98B718 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		477A0CD2BDA33CFA8B3815D0 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5617E037052C02C28F5CF37 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49390F1118F7F73BD1CC9616 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650C08227C23C79B110BA0F /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BD19866FE8DDF2269D7AFED /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A4407A793387118DFE53E629 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD0E71A578CB5A447CBD854 /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D0B0F4E5670A5F27151E37 /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4DAD9897CEA7AD5D46F4B980 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF6174C48BCADEAAD3BEE76 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4E8C0D7F0128F84BF012384F /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3CE6817B96067B837A6E3D /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F720CCCD805C68A0724266F /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 6037A065850A144A1DE71861 /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		52AD4FC6730FB289DA9B7694 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B997BA5390C39434627E09 /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54ACF8E30B969D467FE20C4F /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DEAEBE6EF1C676CCABDF5CA /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		571AFB4F18736518A08294CF /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2EBB4222A9870BF70BF09E /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59F92EA19612BE5D95536144 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A87099365A1DD7D91541C /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		62319F03E0249FE8A2FB64F8 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5D59D44DCA44536989E950 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6304F4A53911FC472656778E /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE2F0ED338109581F68E6CA /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66B992EBECB33F43D205ED6E /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 26475B2790BC3E6563475F1A /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A55DB836A9CDF5FE2B7B05A /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B3CD30B1AA47B4E5A64322 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6B9E3A916F160199D9526067 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C4DEDADBFD3F3519336FE /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DD85B22281B26DF487E25C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA6876E7C434C9690ED55 /* Foundation.framework */; };
+		6E4F5B2BF3BD431A8E9B73AF /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBC609F9E6F4F3181C1DE11 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7294BBEF37658AF95446BBE7 /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F9DEB61A331CA3E91201F /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		741687FC279BCE5B1886E2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA6876E7C434C9690ED55 /* Foundation.framework */; };
+		7467CFD18EEADA7865F2A299 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 738C09CB802A7E558B3D83F4 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77547BA34E7AC1E1A6D4B0B7 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ACC5B43F53AE10B9ED6F5DB /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7758AC994C98BE9D6EEE6B0E /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = CBFBDB4EE0D64BF0516B9C0E /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7887D33D70E1C0BC665ED733 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E8634BD5A4F1031364359852 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7CD5E7CAB242E6AFBA2CB2A5 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 090BD2D2B4CAB98AF84E6EAF /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F748B82DA884B00AB6E73B0 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97140C7250806C5308236229 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80EA4FBE06BDC5B935A19577 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = E5CF4416F628386A2BDF620F /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		834C077570078139CB36C932 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5079872F2A341CD007BEE284 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		848D8696E767782E9D547527 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 730FB97D1533599A0CD7506B /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		882EBAE6083E5C3BCB15D6BC /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060A0DF8F373774A94D237 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8C6BCBCA9361766813220AE6 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3955AF90B9528FE8C50ECD60 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8DBC64A740410FB9157AE0DA /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6C1A9DD2273517078B9299 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93FAEB176AAEF4F573D5C632 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914DA1133097699CA19BFB6 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9517F0D7B10CD35ECCC192F1 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DDFEF58F73AB4A49CAF624 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		954DA55398B69B6B833AAFBA /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = AF686EC14FA7EA449E2E0791 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96E9A767AA0DA442556D99DA /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F66BBDBE6750CC1F136CD /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		98DC1B4F53DA27843B08AFBD /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = C6549E8509A7B0248B24C350 /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AE7AD5CAE48CED6E5C3E09E /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D8A39BEF8CD6A06625773E /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B8EAC9C4E2ACA4DFB32811F /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355D2355DC255C60388A693 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D015E0EB1228852098864D5 /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DB84BB72FB1154434248B /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A2C0329BD312AC3C45125B5C /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C234FDC1266C190C44E882 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A48F80F7AD49FD9F6B509DE1 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = B20E623B41470EEC0BB0158E /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A51FA6B7FB019616D88B99B7 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EAC3B22FDED2642A3D974A /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEB71A3029BCC83C451160AC /* Pods-RMLStarReceiptPrinter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623E02BE69D70E9F5801B5A /* Pods-RMLStarReceiptPrinter_Example-dummy.m */; };
+		B1C3D5C9227180675BBBAF96 /* Pods-RMLStarReceiptPrinter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 148D174C00B897E8E1313E8C /* Pods-RMLStarReceiptPrinter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2875EC8A18DF71412B55386 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7F63F0A8092426664824C2 /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5AEFDDC571408A9634F93D9 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A4870DDBF8C0C7B7AD8A30 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B87D4512737F52A765B28373 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A9BC4851219CC0180972E5 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2CA8117E8B254A9127CCAF /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82D06D7414BDF16F9293 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C16647A6DB32EF5AD5DA5336 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 23ECFEEE3692E1ACC392F78B /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C19CBE80E0262D973BDC000C /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA9F1B25B0661753264B8E /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C2C7FF9FCBFA6435D2FE1330 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = C6394833242B27E6C97BE3D2 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4772712117A5D157CAAEB94 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB1AFFBEEF816B60A61243E /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C56A596AEDDB9F9973A18E59 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 493CFFC300BA913A84EDA3BE /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C660CA51ECDB5BA25A604314 /* Pods-RMLStarReceiptPrinter_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4634C4E2665AA88A89ED4A /* Pods-RMLStarReceiptPrinter_Tests-Specta-dummy.m */; };
+		CAE9F987AFB197241FA91DBC /* RMLStarReceiptPrinter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A658253800C491F9840AC7BC /* RMLStarReceiptPrinter.bundle */; };
+		CD288FAE9E78212A2B22A951 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E0B8A207D32038C5452E9 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D4DB7BFC8CA14CAB53B11C61 /* RMLStarReceiptPrinter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A649BB87833400CA88A1A714 /* RMLStarReceiptPrinter.bundle */; };
+		D6E8F8AE2DB08FD4598E7F95 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AF5F9C0667B62FB4A36021 /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92DC98418ED0BD261C80F4D /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = F46197AC4A236A701E2580CF /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F881711476EBE17ABC8C5E /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ECE6A2C937215ABFB459B4 /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC2986CDA2D28C0D102FE120 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF7B988CD9E591619986E08 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCA1F67F256DF4147E7C031E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA6876E7C434C9690ED55 /* Foundation.framework */; };
+		DE6239B8DB6DE50B5709FBB2 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354E099F778D9389006EFE8 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E143A98267A166A667AA5CED /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = B400E3A6227B91C7B57E48DA /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14B0CA34F2A7E4B274C3057 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9DDA093D4EB0A085CEFA49 /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E504F7471B74DBAC00B825C0 /* RMLStarReceiptPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = E504F7451B74DBAC00B825C0 /* RMLStarReceiptPrinter.h */; };
+		E504F7481B74DBAC00B825C0 /* RMLStarReceiptPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E504F7461B74DBAC00B825C0 /* RMLStarReceiptPrinter.m */; };
+		E50CAEDD986A33F5752290B2 /* Pods-RMLStarReceiptPrinter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6173F4B89B7963D130F6FA01 /* Pods-RMLStarReceiptPrinter_Tests-dummy.m */; };
+		E651B0AF97D4F09E72C7636E /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 771888A8F252808599DA9407 /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6A8F108BB0911241B9DDD7E /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 52501918A1F51DABA06CEB96 /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7F61103EA0028FC5F91E7B4 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2252D9AEE7CA2B71022AB093 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E99D0E77EA97AEC200DAFA9C /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A2851A99560C4BCF1D76CB /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED10CBA3A56E84CA12A92C44 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C9D45383E767CE985A2901 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED5D8D00008D641461CEDD6B /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 28FA39DEF8355891048293F2 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED81E81173E21551A9435753 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 350ACA657B6B3FF87FD7E259 /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE2644CF09CF65D30823468E /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 217F8F5213655289B5A22566 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFED68927F579BBE17BAC072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA6876E7C434C9690ED55 /* Foundation.framework */; };
+		F153B2F36E7CCC7F009DE950 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3ABDE809CB86EBF8FE008 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4381ECB3FB5B801C1F30FAB /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F4F24CE8B17B2894FCF1B /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F5A38AE4F9C6A28114D3FD66 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = DD71ACFF26BEC17CBFA0EB6D /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F830FBB3D7E251CDFB60FFEB /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E5D8F9CE57F9017FC9A24A /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8665D3950A1053D1E4583C8 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0568736458ECBD5BB22C0F82 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F86E31B26ADFEBA323DF93AE /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F29DD2C045F4969E99C68A98 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8F1C50295ED6F527FB823D9 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 66226F9EE8F6D2CFEBCFCAFF /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB83780BEDA6BC6524DABC43 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03803C9DC3A4983F6B8A04DA /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC7F7E3488BBB33D531A0851 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = B79E88AD876D9E0D3EDD5F72 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FF1C56610746314123E18F7F /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = D49F19571D47C754EA11F89C /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05A7B46C70E134F14511F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A86F12E3144C565F1B2EFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F69104BD2D58FE2EA6098F;
+			remoteInfo = "Pods-RMLStarReceiptPrinter_Tests-Expecta";
+		};
+		1DC2DCBC694CEF30C987951E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A86F12E3144C565F1B2EFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B85253A4D96A3FD45B589B19;
+			remoteInfo = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+		};
+		E0BB4D53871B73457349F21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A86F12E3144C565F1B2EFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80C4046F98A8EE20B7BD4A11;
+			remoteInfo = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+		};
+		E8AB4BB6401B0C3048EFB994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A86F12E3144C565F1B2EFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B73812B53B6DF3FB44333C92;
+			remoteInfo = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter";
+		};
+		ECA62ACACE14DF4E08942B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A86F12E3144C565F1B2EFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF36431E80789F8A865CA83;
+			remoteInfo = "Pods-RMLStarReceiptPrinter_Tests-Specta";
+		};
+		F01673644AD91BE541FD2B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A86F12E3144C565F1B2EFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB9A7CED83CB029BF4585B21;
+			remoteInfo = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03803C9DC3A4983F6B8A04DA /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		0568736458ECBD5BB22C0F82 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		07C323BF53E387D773ED7F11 /* Pods-RMLStarReceiptPrinter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMLStarReceiptPrinter_Tests-resources.sh"; sourceTree = "<group>"; };
+		090BD2D2B4CAB98AF84E6EAF /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		0914DA1133097699CA19BFB6 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		0C2EBB4222A9870BF70BF09E /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		0C96402AF31582DAA96C7338 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DEAEBE6EF1C676CCABDF5CA /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		0EC2E969FBC2A3B5A1A3909C /* Pods-RMLStarReceiptPrinter_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
+		10AA9F1B25B0661753264B8E /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		1174F7000E183CD7AC57BCB1 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DF0FCC9E83A74BF8327553 /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		13E1B1A3A67C17806D0299C4 /* Pods-RMLStarReceiptPrinter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMLStarReceiptPrinter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1486D967354D9EB373C0BACC /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		148D174C00B897E8E1313E8C /* Pods-RMLStarReceiptPrinter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1584367686978AD143A127D2 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		160D711CD24619E7FE4B7B56 /* Pods-RMLStarReceiptPrinter_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Example-environment.h"; sourceTree = "<group>"; };
+		1650C08227C23C79B110BA0F /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		16F6B6970D5D0815D87AF55E /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		1818DF29544235F833E95E8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1B0F91A11AD4C39452160291 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig"; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig"; sourceTree = "<group>"; };
+		1E4C4DEDADBFD3F3519336FE /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		1E7F63F0A8092426664824C2 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		217F8F5213655289B5A22566 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		2252D9AEE7CA2B71022AB093 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		23ECFEEE3692E1ACC392F78B /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		24A2851A99560C4BCF1D76CB /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		24D8A39BEF8CD6A06625773E /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		24DE82D06D7414BDF16F9293 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		26475B2790BC3E6563475F1A /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		268F2F812331A2F9D3E00C13 /* Pods-RMLStarReceiptPrinter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMLStarReceiptPrinter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2828CE7423FBF9C34497CEF2 /* Pods-RMLStarReceiptPrinter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMLStarReceiptPrinter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		28FA39DEF8355891048293F2 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		2A060A0DF8F373774A94D237 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		2A4634C4E2665AA88A89ED4A /* Pods-RMLStarReceiptPrinter_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMLStarReceiptPrinter_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		31951A329CCEFA8A28F23F5F /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m"; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m"; sourceTree = "<group>"; };
+		3355D2355DC255C60388A693 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		350ACA657B6B3FF87FD7E259 /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		3955AF90B9528FE8C50ECD60 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		3B94F7C58C94A1A480C46809 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.modulemap"; sourceTree = "<group>"; };
+		3BF51D0F4A4923A32C30DC02 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		3C45D35CF11B6B53442705D3 /* Pods-RMLStarReceiptPrinter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMLStarReceiptPrinter_Tests.modulemap"; sourceTree = "<group>"; };
+		3D3CE6817B96067B837A6E3D /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		41AF5F9C0667B62FB4A36021 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		4364B169B8032E226ED63DE5 /* Pods-RMLStarReceiptPrinter_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Tests-environment.h"; sourceTree = "<group>"; };
+		43FA447098F2A5F43A632262 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		453020CAB3FD78CCEACDEBD3 /* Pods-RMLStarReceiptPrinter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		48C9D45383E767CE985A2901 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		48D065B59C0FCC55754721D5 /* Pods-RMLStarReceiptPrinter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Example-umbrella.h"; sourceTree = "<group>"; };
+		493CFFC300BA913A84EDA3BE /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		4A5D474E02CBBF62B4CA2FD6 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		4A9EC7D63216220B622CD102 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch"; sourceTree = "<group>"; };
+		4B8E5F819B315DDC8AEC112F /* Pods-RMLStarReceiptPrinter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4B9A8BC96E931663689554B1 /* Pods_RMLStarReceiptPrinter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF3ABDE809CB86EBF8FE008 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		5079872F2A341CD007BEE284 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		520D4F04C0488EF5CA78B82E /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		52501918A1F51DABA06CEB96 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		528DB84BB72FB1154434248B /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		53B3CD30B1AA47B4E5A64322 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		5410580907BE319AEDEC6B46 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.xcconfig"; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.xcconfig"; sourceTree = "<group>"; };
+		550039D678972D7D6219293A /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		5514551317E5BBCF5A83C3E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Info.plist"; sourceTree = "<group>"; };
+		597FE157E6E6DE35509F3575 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		5C5F4F24CE8B17B2894FCF1B /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		5FE357BB263AD8BC4C9CFAE0 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		6037A065850A144A1DE71861 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		60985C23B3D16961058F603E /* Pods-RMLStarReceiptPrinter_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMLStarReceiptPrinter_Tests-Specta.modulemap"; sourceTree = "<group>"; };
+		6173F4B89B7963D130F6FA01 /* Pods-RMLStarReceiptPrinter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMLStarReceiptPrinter_Tests-dummy.m"; sourceTree = "<group>"; };
+		6189615C1C63B481A8576BE6 /* Pods_RMLStarReceiptPrinter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66226F9EE8F6D2CFEBCFCAFF /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		6623E02BE69D70E9F5801B5A /* Pods-RMLStarReceiptPrinter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMLStarReceiptPrinter_Example-dummy.m"; sourceTree = "<group>"; };
+		667DF255BDB737524EB3EB61 /* Pods-RMLStarReceiptPrinter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMLStarReceiptPrinter_Example-resources.sh"; sourceTree = "<group>"; };
+		68E5D8F9CE57F9017FC9A24A /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		6A0F9DEB61A331CA3E91201F /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		6AF7B988CD9E591619986E08 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		6B1A1BC6282180AB60BC852F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C166EA84CA445CBA7822D86 /* Pods-RMLStarReceiptPrinter_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMLStarReceiptPrinter_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
+		6C9E0B8A207D32038C5452E9 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		6F65D853098F23FC6F1DC7B4 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		730FB97D1533599A0CD7506B /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		73436B38B86096E9EB3B8F7F /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738C09CB802A7E558B3D83F4 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		7491D699CB54974A072156CA /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		75DDFEF58F73AB4A49CAF624 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		771888A8F252808599DA9407 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		772E07F00E992E8671F032D7 /* Pods-RMLStarReceiptPrinter_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		7ACC5B43F53AE10B9ED6F5DB /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		7BFF6208122436ABEEF4C3AD /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-dummy.m"; sourceTree = "<group>"; };
+		7CB1AFFBEEF816B60A61243E /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		7F90A53EB496EDCC6D96F4B1 /* Pods-RMLStarReceiptPrinter_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		7F9A3AFD10C807E8008B069A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82ECE6A2C937215ABFB459B4 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		8354E099F778D9389006EFE8 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		8EC0A44936BF80FFC4A3C6BE /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		91EC416B6B013660C108C777 /* Pods-RMLStarReceiptPrinter_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		95DEC8F5B760162A62ACFE6A /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.xcconfig"; sourceTree = "<group>"; };
+		97140C7250806C5308236229 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h"; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h"; sourceTree = "<group>"; };
+		9C2FF64B23E5EA39A8ED7F10 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		9D8871C3867759C243EA8A56 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.modulemap"; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.modulemap"; sourceTree = "<group>"; };
+		9E9C9797088B0388D3E50B06 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		A156FA28C4189E97B138BE94 /* Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B997BA5390C39434627E09 /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		A4407A793387118DFE53E629 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		A4DBA8AF35B94C709E6F17A6 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		A5617E037052C02C28F5CF37 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h"; sourceTree = "<group>"; };
+		A649BB87833400CA88A1A714 /* RMLStarReceiptPrinter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMLStarReceiptPrinter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A658253800C491F9840AC7BC /* RMLStarReceiptPrinter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMLStarReceiptPrinter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81DD4E9E96F56B3D1EF683F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9C234FDC1266C190C44E882 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		AB1C5EDA577A8CD2637EC0A6 /* Pods-RMLStarReceiptPrinter_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		AE58A198C96AFFFCE6194351 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		AF686EC14FA7EA449E2E0791 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		AFAC5F86216DB11D457D6135 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMLStarReceiptPrinter_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
+		B20E623B41470EEC0BB0158E /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		B2307AEB426C43E932DB68F5 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		B242B4DC7234F5363DC1340C /* RMLStarReceiptPrinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMLStarReceiptPrinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AA88FD91270475E503756C /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		B3CCA6876E7C434C9690ED55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B400E3A6227B91C7B57E48DA /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		B4D4A564080A9B3187A55BCF /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		B79E88AD876D9E0D3EDD5F72 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
+		B9099C848D4F5ED70D98B718 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		BA5D59D44DCA44536989E950 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		BBF6174C48BCADEAAD3BEE76 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		BDEEB760AA02F30FA345736B /* Pods-RMLStarReceiptPrinter_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMLStarReceiptPrinter_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		C4A4870DDBF8C0C7B7AD8A30 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		C6394833242B27E6C97BE3D2 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		C6549E8509A7B0248B24C350 /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		CBFBDB4EE0D64BF0516B9C0E /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		CE2F4E6F21FFC4A90129B277 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-prefix.pch"; path = "../Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-prefix.pch"; sourceTree = "<group>"; };
+		CFBCE9B9879BFD4941B61A7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49F19571D47C754EA11F89C /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		D4EAC3B22FDED2642A3D974A /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		D53F66BBDBE6750CC1F136CD /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		D611E6DE2B21C812341C4161 /* RMLStarReceiptPrinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMLStarReceiptPrinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFF50A5459C76EAAB974257 /* Pods-RMLStarReceiptPrinter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DB90A0D5F5B8F7F8804CBAB3 /* Pods-RMLStarReceiptPrinter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMLStarReceiptPrinter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		DD71ACFF26BEC17CBFA0EB6D /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		DD9DDA093D4EB0A085CEFA49 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		DE2EE558CCABE97D75DA9C12 /* Pods-RMLStarReceiptPrinter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMLStarReceiptPrinter_Example.modulemap"; sourceTree = "<group>"; };
+		E2744775303A4F1B3623D335 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3389ACC4CE9297E03F8E083 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		E504F7451B74DBAC00B825C0 /* RMLStarReceiptPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLStarReceiptPrinter.h; sourceTree = "<group>"; };
+		E504F7461B74DBAC00B825C0 /* RMLStarReceiptPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLStarReceiptPrinter.m; sourceTree = "<group>"; };
+		E5418ED38C4AC52F09C9F2F0 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		E5CF4416F628386A2BDF620F /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		E742C5AB82D78941E4987B36 /* Pods-RMLStarReceiptPrinter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMLStarReceiptPrinter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E8634BD5A4F1031364359852 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		E92A87099365A1DD7D91541C /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		EEBC609F9E6F4F3181C1DE11 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		EEE2F0ED338109581F68E6CA /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		EF0D133DCCF7AABBCF4DEAFB /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig"; sourceTree = "<group>"; };
+		EF6C1A9DD2273517078B9299 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		F29DD2C045F4969E99C68A98 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		F46197AC4A236A701E2580CF /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		F5A9BC4851219CC0180972E5 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		F666D1CD81C8EE53CD28933C /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		F9D0B0F4E5670A5F27151E37 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		FA7865FF30921B525230D91E /* Pods-RMLStarReceiptPrinter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMLStarReceiptPrinter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD4A79E8B13BC028C2BEBA2A /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004C64B5E9E377FC6AB760F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA1F67F256DF4147E7C031E /* Foundation.framework in Frameworks */,
+				2D68DA9C8854B95B95FA65E9 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD56C6327D8C6F662DC385D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1E8D69E362DA6FEE7D9AF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E43B263733649116595072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171EF5A6C7EFECCD64F7D467 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DD975F40AE8B0170C6E787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD85B22281B26DF487E25C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6AEE0A698C35B8735B270AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404FC7D54A2A3A7115CE915B /* Foundation.framework in Frameworks */,
+				3A936B81F11D5008FBAAEFE9 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7FC021DE16F65D240BEC6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED68927F579BBE17BAC072 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2AC412DC2BA7D7EA10C3C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741687FC279BCE5B1886E2F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CB0FCEA063FDF9E8DB10740 /* Pods-RMLStarReceiptPrinter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CFBCE9B9879BFD4941B61A7F /* Info.plist */,
+				DE2EE558CCABE97D75DA9C12 /* Pods-RMLStarReceiptPrinter_Example.modulemap */,
+				13E1B1A3A67C17806D0299C4 /* Pods-RMLStarReceiptPrinter_Example-acknowledgements.markdown */,
+				2828CE7423FBF9C34497CEF2 /* Pods-RMLStarReceiptPrinter_Example-acknowledgements.plist */,
+				6623E02BE69D70E9F5801B5A /* Pods-RMLStarReceiptPrinter_Example-dummy.m */,
+				160D711CD24619E7FE4B7B56 /* Pods-RMLStarReceiptPrinter_Example-environment.h */,
+				268F2F812331A2F9D3E00C13 /* Pods-RMLStarReceiptPrinter_Example-frameworks.sh */,
+				667DF255BDB737524EB3EB61 /* Pods-RMLStarReceiptPrinter_Example-resources.sh */,
+				48D065B59C0FCC55754721D5 /* Pods-RMLStarReceiptPrinter_Example-umbrella.h */,
+				DAFF50A5459C76EAAB974257 /* Pods-RMLStarReceiptPrinter_Example.debug.xcconfig */,
+				4B8E5F819B315DDC8AEC112F /* Pods-RMLStarReceiptPrinter_Example.release.xcconfig */,
+			);
+			name = "Pods-RMLStarReceiptPrinter_Example";
+			path = "Target Support Files/Pods-RMLStarReceiptPrinter_Example";
+			sourceTree = "<group>";
+		};
+		20F34803D54E5BB7C722FA9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4534E195A40A139614CC9BCE /* Expecta */,
+				8AF1EAD6F0678DD6D4C1C1DB /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		22D12FBB8A89B669574454C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1174F7000E183CD7AC57BCB1 /* Expecta.framework */,
+				6189615C1C63B481A8576BE6 /* Pods_RMLStarReceiptPrinter_Example.framework */,
+				4B9A8BC96E931663689554B1 /* Pods_RMLStarReceiptPrinter_Tests.framework */,
+				A649BB87833400CA88A1A714 /* RMLStarReceiptPrinter.bundle */,
+				A658253800C491F9840AC7BC /* RMLStarReceiptPrinter.bundle */,
+				B242B4DC7234F5363DC1340C /* RMLStarReceiptPrinter.framework */,
+				D611E6DE2B21C812341C4161 /* RMLStarReceiptPrinter.framework */,
+				73436B38B86096E9EB3B8F7F /* Specta.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328153512D8D426894F5A7BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2744775303A4F1B3623D335 /* Info.plist */,
+				6C166EA84CA445CBA7822D86 /* Pods-RMLStarReceiptPrinter_Tests-Expecta.modulemap */,
+				91EC416B6B013660C108C777 /* Pods-RMLStarReceiptPrinter_Tests-Expecta.xcconfig */,
+				1584367686978AD143A127D2 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-Private.xcconfig */,
+				BDEEB760AA02F30FA345736B /* Pods-RMLStarReceiptPrinter_Tests-Expecta-dummy.m */,
+				A4DBA8AF35B94C709E6F17A6 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-prefix.pch */,
+				AFAC5F86216DB11D457D6135 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		3E7A33BB97C7DCBBA783B47F /* Pods-RMLStarReceiptPrinter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6B1A1BC6282180AB60BC852F /* Info.plist */,
+				3C45D35CF11B6B53442705D3 /* Pods-RMLStarReceiptPrinter_Tests.modulemap */,
+				E742C5AB82D78941E4987B36 /* Pods-RMLStarReceiptPrinter_Tests-acknowledgements.markdown */,
+				FA7865FF30921B525230D91E /* Pods-RMLStarReceiptPrinter_Tests-acknowledgements.plist */,
+				6173F4B89B7963D130F6FA01 /* Pods-RMLStarReceiptPrinter_Tests-dummy.m */,
+				4364B169B8032E226ED63DE5 /* Pods-RMLStarReceiptPrinter_Tests-environment.h */,
+				DB90A0D5F5B8F7F8804CBAB3 /* Pods-RMLStarReceiptPrinter_Tests-frameworks.sh */,
+				07C323BF53E387D773ED7F11 /* Pods-RMLStarReceiptPrinter_Tests-resources.sh */,
+				148D174C00B897E8E1313E8C /* Pods-RMLStarReceiptPrinter_Tests-umbrella.h */,
+				A156FA28C4189E97B138BE94 /* Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig */,
+				453020CAB3FD78CCEACDEBD3 /* Pods-RMLStarReceiptPrinter_Tests.release.xcconfig */,
+			);
+			name = "Pods-RMLStarReceiptPrinter_Tests";
+			path = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests";
+			sourceTree = "<group>";
+		};
+		4534E195A40A139614CC9BCE /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				3BF51D0F4A4923A32C30DC02 /* EXPBlockDefinedMatcher.h */,
+				550039D678972D7D6219293A /* EXPBlockDefinedMatcher.m */,
+				6F65D853098F23FC6F1DC7B4 /* EXPDefines.h */,
+				6A0F9DEB61A331CA3E91201F /* EXPDoubleTuple.h */,
+				1650C08227C23C79B110BA0F /* EXPDoubleTuple.m */,
+				EF6C1A9DD2273517078B9299 /* EXPExpect.h */,
+				B9099C848D4F5ED70D98B718 /* EXPExpect.m */,
+				C6549E8509A7B0248B24C350 /* EXPFloatTuple.h */,
+				BBF6174C48BCADEAAD3BEE76 /* EXPFloatTuple.m */,
+				A4407A793387118DFE53E629 /* EXPMatcher.h */,
+				0DEAEBE6EF1C676CCABDF5CA /* EXPMatcherHelpers.h */,
+				3355D2355DC255C60388A693 /* EXPMatcherHelpers.m */,
+				41AF5F9C0667B62FB4A36021 /* EXPMatchers.h */,
+				090BD2D2B4CAB98AF84E6EAF /* EXPMatchers+beCloseTo.h */,
+				53B3CD30B1AA47B4E5A64322 /* EXPMatchers+beCloseTo.m */,
+				738C09CB802A7E558B3D83F4 /* EXPMatchers+beFalsy.h */,
+				3955AF90B9528FE8C50ECD60 /* EXPMatchers+beFalsy.m */,
+				5079872F2A341CD007BEE284 /* EXPMatchers+beGreaterThan.h */,
+				B20E623B41470EEC0BB0158E /* EXPMatchers+beGreaterThan.m */,
+				7ACC5B43F53AE10B9ED6F5DB /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				03803C9DC3A4983F6B8A04DA /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				493CFFC300BA913A84EDA3BE /* EXPMatchers+beIdenticalTo.h */,
+				730FB97D1533599A0CD7506B /* EXPMatchers+beIdenticalTo.m */,
+				52501918A1F51DABA06CEB96 /* EXPMatchers+beInTheRangeOf.h */,
+				E8634BD5A4F1031364359852 /* EXPMatchers+beInTheRangeOf.m */,
+				F5A9BC4851219CC0180972E5 /* EXPMatchers+beInstanceOf.h */,
+				B3AA88FD91270475E503756C /* EXPMatchers+beInstanceOf.m */,
+				B400E3A6227B91C7B57E48DA /* EXPMatchers+beKindOf.h */,
+				5FE357BB263AD8BC4C9CFAE0 /* EXPMatchers+beKindOf.m */,
+				7491D699CB54974A072156CA /* EXPMatchers+beLessThan.h */,
+				C4A4870DDBF8C0C7B7AD8A30 /* EXPMatchers+beLessThan.m */,
+				F29DD2C045F4969E99C68A98 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				24A2851A99560C4BCF1D76CB /* EXPMatchers+beLessThanOrEqualTo.m */,
+				66226F9EE8F6D2CFEBCFCAFF /* EXPMatchers+beNil.h */,
+				24DE82D06D7414BDF16F9293 /* EXPMatchers+beNil.m */,
+				7CB1AFFBEEF816B60A61243E /* EXPMatchers+beSubclassOf.h */,
+				2A060A0DF8F373774A94D237 /* EXPMatchers+beSubclassOf.m */,
+				43FA447098F2A5F43A632262 /* EXPMatchers+beSupersetOf.h */,
+				D53F66BBDBE6750CC1F136CD /* EXPMatchers+beSupersetOf.m */,
+				0568736458ECBD5BB22C0F82 /* EXPMatchers+beTruthy.h */,
+				10AA9F1B25B0661753264B8E /* EXPMatchers+beTruthy.m */,
+				A9C234FDC1266C190C44E882 /* EXPMatchers+beginWith.h */,
+				D49F19571D47C754EA11F89C /* EXPMatchers+beginWith.m */,
+				E5CF4416F628386A2BDF620F /* EXPMatchers+conformTo.h */,
+				4A5D474E02CBBF62B4CA2FD6 /* EXPMatchers+conformTo.m */,
+				0C2EBB4222A9870BF70BF09E /* EXPMatchers+contain.h */,
+				1E4C4DEDADBFD3F3519336FE /* EXPMatchers+contain.m */,
+				A1B997BA5390C39434627E09 /* EXPMatchers+endWith.h */,
+				0914DA1133097699CA19BFB6 /* EXPMatchers+endWith.m */,
+				6AF7B988CD9E591619986E08 /* EXPMatchers+equal.h */,
+				E92A87099365A1DD7D91541C /* EXPMatchers+equal.m */,
+				9E9C9797088B0388D3E50B06 /* EXPMatchers+haveCountOf.h */,
+				8EC0A44936BF80FFC4A3C6BE /* EXPMatchers+haveCountOf.m */,
+				CBFBDB4EE0D64BF0516B9C0E /* EXPMatchers+match.h */,
+				B79E88AD876D9E0D3EDD5F72 /* EXPMatchers+match.m */,
+				75DDFEF58F73AB4A49CAF624 /* EXPMatchers+postNotification.h */,
+				B2307AEB426C43E932DB68F5 /* EXPMatchers+postNotification.m */,
+				771888A8F252808599DA9407 /* EXPMatchers+raise.h */,
+				8354E099F778D9389006EFE8 /* EXPMatchers+raise.m */,
+				FD4A79E8B13BC028C2BEBA2A /* EXPMatchers+raiseWithReason.h */,
+				E3389ACC4CE9297E03F8E083 /* EXPMatchers+raiseWithReason.m */,
+				2252D9AEE7CA2B71022AB093 /* EXPMatchers+respondTo.h */,
+				4FF3ABDE809CB86EBF8FE008 /* EXPMatchers+respondTo.m */,
+				520D4F04C0488EF5CA78B82E /* EXPUnsupportedObject.h */,
+				6C9E0B8A207D32038C5452E9 /* EXPUnsupportedObject.m */,
+				DD9DDA093D4EB0A085CEFA49 /* Expecta.h */,
+				597FE157E6E6DE35509F3575 /* ExpectaObject.h */,
+				1486D967354D9EB373C0BACC /* ExpectaObject.m */,
+				48C9D45383E767CE985A2901 /* ExpectaSupport.h */,
+				24D8A39BEF8CD6A06625773E /* ExpectaSupport.m */,
+				F46197AC4A236A701E2580CF /* NSObject+Expecta.h */,
+				68E5D8F9CE57F9017FC9A24A /* NSValue+Expecta.h */,
+				B4D4A564080A9B3187A55BCF /* NSValue+Expecta.m */,
+				328153512D8D426894F5A7BA /* Support Files */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		56FA222E7045589F6ECEDB8D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CB0FCEA063FDF9E8DB10740 /* Pods-RMLStarReceiptPrinter_Example */,
+				3E7A33BB97C7DCBBA783B47F /* Pods-RMLStarReceiptPrinter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		60C1CA22768786C844789FE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A3AFD10C807E8008B069A /* Info.plist */,
+				5514551317E5BBCF5A83C3E8 /* Info.plist */,
+				3B94F7C58C94A1A480C46809 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.modulemap */,
+				95DEC8F5B760162A62ACFE6A /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.xcconfig */,
+				EF0D133DCCF7AABBCF4DEAFB /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig */,
+				7BFF6208122436ABEEF4C3AD /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-dummy.m */,
+				4A9EC7D63216220B622CD102 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch */,
+				A5617E037052C02C28F5CF37 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h */,
+				9D8871C3867759C243EA8A56 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.modulemap */,
+				5410580907BE319AEDEC6B46 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.xcconfig */,
+				1B0F91A11AD4C39452160291 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig */,
+				31951A329CCEFA8A28F23F5F /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m */,
+				CE2F4E6F21FFC4A90129B277 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-prefix.pch */,
+				97140C7250806C5308236229 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter";
+			sourceTree = "<group>";
+		};
+		7151374AB585B34403FCD4E6 /* RMLStarReceiptPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				F5A95EA1420BA48AFA906B56 /* Pod */,
+				60C1CA22768786C844789FE4 /* Support Files */,
+			);
+			name = RMLStarReceiptPrinter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		82E38032723E25B222DFA6D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C96402AF31582DAA96C7338 /* Info.plist */,
+				60985C23B3D16961058F603E /* Pods-RMLStarReceiptPrinter_Tests-Specta.modulemap */,
+				AB1C5EDA577A8CD2637EC0A6 /* Pods-RMLStarReceiptPrinter_Tests-Specta.xcconfig */,
+				7F90A53EB496EDCC6D96F4B1 /* Pods-RMLStarReceiptPrinter_Tests-Specta-Private.xcconfig */,
+				2A4634C4E2665AA88A89ED4A /* Pods-RMLStarReceiptPrinter_Tests-Specta-dummy.m */,
+				772E07F00E992E8671F032D7 /* Pods-RMLStarReceiptPrinter_Tests-Specta-prefix.pch */,
+				0EC2E969FBC2A3B5A1A3909C /* Pods-RMLStarReceiptPrinter_Tests-Specta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta";
+			sourceTree = "<group>";
+		};
+		8AF1EAD6F0678DD6D4C1C1DB /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				AF686EC14FA7EA449E2E0791 /* SPTCallSite.h */,
+				82ECE6A2C937215ABFB459B4 /* SPTCallSite.m */,
+				D4EAC3B22FDED2642A3D974A /* SPTCompiledExample.h */,
+				528DB84BB72FB1154434248B /* SPTCompiledExample.m */,
+				DD71ACFF26BEC17CBFA0EB6D /* SPTExample.h */,
+				6037A065850A144A1DE71861 /* SPTExample.m */,
+				BA5D59D44DCA44536989E950 /* SPTExampleGroup.h */,
+				5C5F4F24CE8B17B2894FCF1B /* SPTExampleGroup.m */,
+				C6394833242B27E6C97BE3D2 /* SPTExcludeGlobalBeforeAfterEach.h */,
+				23ECFEEE3692E1ACC392F78B /* SPTGlobalBeforeAfterEach.h */,
+				3D3CE6817B96067B837A6E3D /* SPTSharedExampleGroups.h */,
+				E5418ED38C4AC52F09C9F2F0 /* SPTSharedExampleGroups.m */,
+				AE58A198C96AFFFCE6194351 /* SPTSpec.h */,
+				16F6B6970D5D0815D87AF55E /* SPTSpec.m */,
+				9C2FF64B23E5EA39A8ED7F10 /* SPTTestSuite.h */,
+				350ACA657B6B3FF87FD7E259 /* SPTTestSuite.m */,
+				13DF0FCC9E83A74BF8327553 /* Specta.h */,
+				EEE2F0ED338109581F68E6CA /* SpectaDSL.h */,
+				F9D0B0F4E5670A5F27151E37 /* SpectaDSL.m */,
+				26475B2790BC3E6563475F1A /* SpectaTypes.h */,
+				1E7F63F0A8092426664824C2 /* SpectaUtility.h */,
+				EEBC609F9E6F4F3181C1DE11 /* SpectaUtility.m */,
+				217F8F5213655289B5A22566 /* XCTest+Private.h */,
+				28FA39DEF8355891048293F2 /* XCTestCase+Specta.h */,
+				F666D1CD81C8EE53CD28933C /* XCTestCase+Specta.m */,
+				82E38032723E25B222DFA6D0 /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		94D953532979770FDD03861D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B3CCA6876E7C434C9690ED55 /* Foundation.framework */,
+				1818DF29544235F833E95E8D /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		987ACC57F0A50DC9EE1F0538 = {
+			isa = PBXGroup;
+			children = (
+				A81DD4E9E96F56B3D1EF683F /* Podfile */,
+				B43CA16E200E29E01BB2979B /* Development Pods */,
+				B7A71E8E8D27386E86EA35DA /* Frameworks */,
+				20F34803D54E5BB7C722FA9C /* Pods */,
+				22D12FBB8A89B669574454C9 /* Products */,
+				56FA222E7045589F6ECEDB8D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B43CA16E200E29E01BB2979B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7151374AB585B34403FCD4E6 /* RMLStarReceiptPrinter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B7A71E8E8D27386E86EA35DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D953532979770FDD03861D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB4358D0CE55B78E27DC815E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E504F7451B74DBAC00B825C0 /* RMLStarReceiptPrinter.h */,
+				E504F7461B74DBAC00B825C0 /* RMLStarReceiptPrinter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F5A95EA1420BA48AFA906B56 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CB4358D0CE55B78E27DC815E /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1836D7D45120AEEB7102D66C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E323496C364FE79294FD7E /* Pods-RMLStarReceiptPrinter_Tests-Specta-umbrella.h in Headers */,
+				954DA55398B69B6B833AAFBA /* SPTCallSite.h in Headers */,
+				A51FA6B7FB019616D88B99B7 /* SPTCompiledExample.h in Headers */,
+				F5A38AE4F9C6A28114D3FD66 /* SPTExample.h in Headers */,
+				62319F03E0249FE8A2FB64F8 /* SPTExampleGroup.h in Headers */,
+				C2C7FF9FCBFA6435D2FE1330 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
+				C16647A6DB32EF5AD5DA5336 /* SPTGlobalBeforeAfterEach.h in Headers */,
+				4E8C0D7F0128F84BF012384F /* SPTSharedExampleGroups.h in Headers */,
+				392E2BD09CE7A662C3B817E0 /* SPTSpec.h in Headers */,
+				3B71EDD2B8D764655705D216 /* SPTTestSuite.h in Headers */,
+				3FDD886291261484125501AE /* Specta.h in Headers */,
+				6304F4A53911FC472656778E /* SpectaDSL.h in Headers */,
+				66B992EBECB33F43D205ED6E /* SpectaTypes.h in Headers */,
+				B2875EC8A18DF71412B55386 /* SpectaUtility.h in Headers */,
+				EE2644CF09CF65D30823468E /* XCTest+Private.h in Headers */,
+				ED5D8D00008D641461CEDD6B /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FE0E9EE444FDCF179ACE97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C3D5C9227180675BBBAF96 /* Pods-RMLStarReceiptPrinter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED699CA1BCB139B76499187 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2302435A407D72D8023C500F /* EXPBlockDefinedMatcher.h in Headers */,
+				30C4B04DFCFF060CCD64F185 /* EXPDefines.h in Headers */,
+				7294BBEF37658AF95446BBE7 /* EXPDoubleTuple.h in Headers */,
+				8DBC64A740410FB9157AE0DA /* EXPExpect.h in Headers */,
+				98DC1B4F53DA27843B08AFBD /* EXPFloatTuple.h in Headers */,
+				4BD19866FE8DDF2269D7AFED /* EXPMatcher.h in Headers */,
+				54ACF8E30B969D467FE20C4F /* EXPMatcherHelpers.h in Headers */,
+				7CD5E7CAB242E6AFBA2CB2A5 /* EXPMatchers+beCloseTo.h in Headers */,
+				7467CFD18EEADA7865F2A299 /* EXPMatchers+beFalsy.h in Headers */,
+				834C077570078139CB36C932 /* EXPMatchers+beGreaterThan.h in Headers */,
+				77547BA34E7AC1E1A6D4B0B7 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				C56A596AEDDB9F9973A18E59 /* EXPMatchers+beIdenticalTo.h in Headers */,
+				E6A8F108BB0911241B9DDD7E /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				B87D4512737F52A765B28373 /* EXPMatchers+beInstanceOf.h in Headers */,
+				E143A98267A166A667AA5CED /* EXPMatchers+beKindOf.h in Headers */,
+				1C86D4285DC7C19D02029988 /* EXPMatchers+beLessThan.h in Headers */,
+				F86E31B26ADFEBA323DF93AE /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				F8F1C50295ED6F527FB823D9 /* EXPMatchers+beNil.h in Headers */,
+				C4772712117A5D157CAAEB94 /* EXPMatchers+beSubclassOf.h in Headers */,
+				2179C3B1EE28D978346BDFAA /* EXPMatchers+beSupersetOf.h in Headers */,
+				F8665D3950A1053D1E4583C8 /* EXPMatchers+beTruthy.h in Headers */,
+				A2C0329BD312AC3C45125B5C /* EXPMatchers+beginWith.h in Headers */,
+				80EA4FBE06BDC5B935A19577 /* EXPMatchers+conformTo.h in Headers */,
+				571AFB4F18736518A08294CF /* EXPMatchers+contain.h in Headers */,
+				52AD4FC6730FB289DA9B7694 /* EXPMatchers+endWith.h in Headers */,
+				DC2986CDA2D28C0D102FE120 /* EXPMatchers+equal.h in Headers */,
+				2A5CE305DBDF2B0EF2D6A292 /* EXPMatchers+haveCountOf.h in Headers */,
+				7758AC994C98BE9D6EEE6B0E /* EXPMatchers+match.h in Headers */,
+				9517F0D7B10CD35ECCC192F1 /* EXPMatchers+postNotification.h in Headers */,
+				E651B0AF97D4F09E72C7636E /* EXPMatchers+raise.h in Headers */,
+				1AC02903AA5AD98D51F16617 /* EXPMatchers+raiseWithReason.h in Headers */,
+				E7F61103EA0028FC5F91E7B4 /* EXPMatchers+respondTo.h in Headers */,
+				D6E8F8AE2DB08FD4598E7F95 /* EXPMatchers.h in Headers */,
+				1605DF12A82402A015C17DAF /* EXPUnsupportedObject.h in Headers */,
+				E14B0CA34F2A7E4B274C3057 /* Expecta.h in Headers */,
+				1122997339670C2CFA788E3F /* ExpectaObject.h in Headers */,
+				ED10CBA3A56E84CA12A92C44 /* ExpectaSupport.h in Headers */,
+				D92DC98418ED0BD261C80F4D /* NSObject+Expecta.h in Headers */,
+				F830FBB3D7E251CDFB60FFEB /* NSValue+Expecta.h in Headers */,
+				37DCAACDA2C829CFF09CD462 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83753B57BC74026287B45826 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E504F7471B74DBAC00B825C0 /* RMLStarReceiptPrinter.h in Headers */,
+				27943B7783034D986D5AB3D5 /* Pods-RMLStarReceiptPrinter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89A1879221FD92A8239A1A94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F748B82DA884B00AB6E73B0 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEF5C2BD2E6916EBD2F766E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477A0CD2BDA33CFA8B3815D0 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		021244930B57D273D606EF65 /* Pods-RMLStarReceiptPrinter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B41D82580ADAA2CEC318D16 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Example" */;
+			buildPhases = (
+				4E3B431EF9637D81C35510CF /* Sources */,
+				C1E43B263733649116595072 /* Frameworks */,
+				83753B57BC74026287B45826 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9DE7B8A01DA3D0EE17D1877 /* PBXTargetDependency */,
+			);
+			name = "Pods-RMLStarReceiptPrinter_Example";
+			productName = "Pods-RMLStarReceiptPrinter_Example";
+			productReference = 6189615C1C63B481A8576BE6 /* Pods_RMLStarReceiptPrinter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55F69104BD2D58FE2EA6098F /* Pods-RMLStarReceiptPrinter_Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6596306B8BC11BBE0532FE41 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-Expecta" */;
+			buildPhases = (
+				BA24564509E025670B3CA5E8 /* Sources */,
+				004C64B5E9E377FC6AB760F7 /* Frameworks */,
+				5ED699CA1BCB139B76499187 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RMLStarReceiptPrinter_Tests-Expecta";
+			productName = "Pods-RMLStarReceiptPrinter_Tests-Expecta";
+			productReference = 1174F7000E183CD7AC57BCB1 /* Expecta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80C4046F98A8EE20B7BD4A11 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A18CB329E428CF9F699CF78 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter" */;
+			buildPhases = (
+				AE3A67FAEA2C0E45828E95B1 /* Sources */,
+				AAD56C6327D8C6F662DC385D /* Frameworks */,
+				6B3D6127F00E04A614F44FD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+			productName = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+			productReference = A649BB87833400CA88A1A714 /* RMLStarReceiptPrinter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ACF36431E80789F8A865CA83 /* Pods-RMLStarReceiptPrinter_Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E724A9AAF95BF40B94EBE960 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-Specta" */;
+			buildPhases = (
+				CC3A60641EAC1073139CF9A8 /* Sources */,
+				E6AEE0A698C35B8735B270AF /* Frameworks */,
+				1836D7D45120AEEB7102D66C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RMLStarReceiptPrinter_Tests-Specta";
+			productName = "Pods-RMLStarReceiptPrinter_Tests-Specta";
+			productReference = 73436B38B86096E9EB3B8F7F /* Specta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B73812B53B6DF3FB44333C92 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1619358664E45E2DC83823D0 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter" */;
+			buildPhases = (
+				3116C0ACE0A855CAD43387A6 /* Sources */,
+				EB7FC021DE16F65D240BEC6A /* Frameworks */,
+				580BBD09ED6AE2EDE302E59B /* Resources */,
+				CAEF5C2BD2E6916EBD2F766E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36D419AE628CDDBB0F19FF3 /* PBXTargetDependency */,
+			);
+			name = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter";
+			productName = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter";
+			productReference = B242B4DC7234F5363DC1340C /* RMLStarReceiptPrinter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B85253A4D96A3FD45B589B19 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA0373BAEEBC3DAF3F46EDF /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter" */;
+			buildPhases = (
+				5BF920E48FFEDE19D049FF84 /* Sources */,
+				BC1E8D69E362DA6FEE7D9AF1 /* Frameworks */,
+				FA6AFDAB9C0D1D7F910A608E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+			productName = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+			productReference = A658253800C491F9840AC7BC /* RMLStarReceiptPrinter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BB9A7CED83CB029BF4585B21 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E5011FD111C8F97A195622 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter" */;
+			buildPhases = (
+				9D0B30FE9E073B1C1A037276 /* Sources */,
+				F2AC412DC2BA7D7EA10C3C05 /* Frameworks */,
+				902D4D462FEDD410FA6431B9 /* Resources */,
+				89A1879221FD92A8239A1A94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740E966453D1B1B1BB085A32 /* PBXTargetDependency */,
+			);
+			name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter";
+			productName = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter";
+			productReference = D611E6DE2B21C812341C4161 /* RMLStarReceiptPrinter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7EA9A8C5EE802FB5119F234 /* Pods-RMLStarReceiptPrinter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC788B03DBE0F321CF64902 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests" */;
+			buildPhases = (
+				D65C75B711E8BDC6DB7A4F28 /* Sources */,
+				E1DD975F40AE8B0170C6E787 /* Frameworks */,
+				36FE0E9EE444FDCF179ACE97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC8D334D094ED9B941E48BD /* PBXTargetDependency */,
+				4EED38E860439CFCE4B87635 /* PBXTargetDependency */,
+				58B425C4FA6624E1B8E97004 /* PBXTargetDependency */,
+			);
+			name = "Pods-RMLStarReceiptPrinter_Tests";
+			productName = "Pods-RMLStarReceiptPrinter_Tests";
+			productReference = 4B9A8BC96E931663689554B1 /* Pods_RMLStarReceiptPrinter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A86F12E3144C565F1B2EFCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 819C362560913174238D308E /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 987ACC57F0A50DC9EE1F0538;
+			productRefGroup = 22D12FBB8A89B669574454C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				021244930B57D273D606EF65 /* Pods-RMLStarReceiptPrinter_Example */,
+				B73812B53B6DF3FB44333C92 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter */,
+				80C4046F98A8EE20B7BD4A11 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter */,
+				F7EA9A8C5EE802FB5119F234 /* Pods-RMLStarReceiptPrinter_Tests */,
+				55F69104BD2D58FE2EA6098F /* Pods-RMLStarReceiptPrinter_Tests-Expecta */,
+				BB9A7CED83CB029BF4585B21 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter */,
+				B85253A4D96A3FD45B589B19 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter */,
+				ACF36431E80789F8A865CA83 /* Pods-RMLStarReceiptPrinter_Tests-Specta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		580BBD09ED6AE2EDE302E59B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DB7BFC8CA14CAB53B11C61 /* RMLStarReceiptPrinter.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B3D6127F00E04A614F44FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		902D4D462FEDD410FA6431B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE9F987AFB197241FA91DBC /* RMLStarReceiptPrinter.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6AFDAB9C0D1D7F910A608E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3116C0ACE0A855CAD43387A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44673AAE666CF64B5A15D999 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3B431EF9637D81C35510CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB71A3029BCC83C451160AC /* Pods-RMLStarReceiptPrinter_Example-dummy.m in Sources */,
+				E504F7481B74DBAC00B825C0 /* RMLStarReceiptPrinter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF920E48FFEDE19D049FF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D0B30FE9E073B1C1A037276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214CB8A9A3D7D846AD933366 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3A67FAEA2C0E45828E95B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA24564509E025670B3CA5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380C13E50C6F0906355AD5B5 /* EXPBlockDefinedMatcher.m in Sources */,
+				49390F1118F7F73BD1CC9616 /* EXPDoubleTuple.m in Sources */,
+				4650FF64F4E64CEB3C42210F /* EXPExpect.m in Sources */,
+				4DAD9897CEA7AD5D46F4B980 /* EXPFloatTuple.m in Sources */,
+				9B8EAC9C4E2ACA4DFB32811F /* EXPMatcherHelpers.m in Sources */,
+				6A55DB836A9CDF5FE2B7B05A /* EXPMatchers+beCloseTo.m in Sources */,
+				8C6BCBCA9361766813220AE6 /* EXPMatchers+beFalsy.m in Sources */,
+				A48F80F7AD49FD9F6B509DE1 /* EXPMatchers+beGreaterThan.m in Sources */,
+				FB83780BEDA6BC6524DABC43 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				848D8696E767782E9D547527 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				7887D33D70E1C0BC665ED733 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				15FE1D410DD6AE14344A867B /* EXPMatchers+beInstanceOf.m in Sources */,
+				0CA8E2FD81E561593A63505F /* EXPMatchers+beKindOf.m in Sources */,
+				B5AEFDDC571408A9634F93D9 /* EXPMatchers+beLessThan.m in Sources */,
+				E99D0E77EA97AEC200DAFA9C /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				BE2CA8117E8B254A9127CCAF /* EXPMatchers+beNil.m in Sources */,
+				882EBAE6083E5C3BCB15D6BC /* EXPMatchers+beSubclassOf.m in Sources */,
+				96E9A767AA0DA442556D99DA /* EXPMatchers+beSupersetOf.m in Sources */,
+				C19CBE80E0262D973BDC000C /* EXPMatchers+beTruthy.m in Sources */,
+				FF1C56610746314123E18F7F /* EXPMatchers+beginWith.m in Sources */,
+				191BF66F14B40B8F5B21620D /* EXPMatchers+conformTo.m in Sources */,
+				6B9E3A916F160199D9526067 /* EXPMatchers+contain.m in Sources */,
+				93FAEB176AAEF4F573D5C632 /* EXPMatchers+endWith.m in Sources */,
+				59F92EA19612BE5D95536144 /* EXPMatchers+equal.m in Sources */,
+				31C478005839BADBFB67DEED /* EXPMatchers+haveCountOf.m in Sources */,
+				FC7F7E3488BBB33D531A0851 /* EXPMatchers+match.m in Sources */,
+				25931F47F5993AE842624801 /* EXPMatchers+postNotification.m in Sources */,
+				DE6239B8DB6DE50B5709FBB2 /* EXPMatchers+raise.m in Sources */,
+				0B823448015BE98977E8D633 /* EXPMatchers+raiseWithReason.m in Sources */,
+				F153B2F36E7CCC7F009DE950 /* EXPMatchers+respondTo.m in Sources */,
+				CD288FAE9E78212A2B22A951 /* EXPUnsupportedObject.m in Sources */,
+				2E3A474CADE2A9D775F0079F /* ExpectaObject.m in Sources */,
+				9AE7AD5CAE48CED6E5C3E09E /* ExpectaSupport.m in Sources */,
+				01A5A4C8091A1670F9AF753E /* NSValue+Expecta.m in Sources */,
+				364613780E90950BC35AFF6A /* Pods-RMLStarReceiptPrinter_Tests-Expecta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3A60641EAC1073139CF9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C660CA51ECDB5BA25A604314 /* Pods-RMLStarReceiptPrinter_Tests-Specta-dummy.m in Sources */,
+				D9F881711476EBE17ABC8C5E /* SPTCallSite.m in Sources */,
+				9D015E0EB1228852098864D5 /* SPTCompiledExample.m in Sources */,
+				4F720CCCD805C68A0724266F /* SPTExample.m in Sources */,
+				F4381ECB3FB5B801C1F30FAB /* SPTExampleGroup.m in Sources */,
+				3B2EA0E9B8CA8939B894E8EE /* SPTSharedExampleGroups.m in Sources */,
+				0C7F339DC001690F28AB0702 /* SPTSpec.m in Sources */,
+				ED81E81173E21551A9435753 /* SPTTestSuite.m in Sources */,
+				4CD0E71A578CB5A447CBD854 /* SpectaDSL.m in Sources */,
+				6E4F5B2BF3BD431A8E9B73AF /* SpectaUtility.m in Sources */,
+				2843E1E6ECDDB4B3479C057E /* XCTestCase+Specta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C75B711E8BDC6DB7A4F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50CAEDD986A33F5752290B2 /* Pods-RMLStarReceiptPrinter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EED38E860439CFCE4B87635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter";
+			target = BB9A7CED83CB029BF4585B21 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter */;
+			targetProxy = F01673644AD91BE541FD2B8C /* PBXContainerItemProxy */;
+		};
+		58B425C4FA6624E1B8E97004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RMLStarReceiptPrinter_Tests-Specta";
+			target = ACF36431E80789F8A865CA83 /* Pods-RMLStarReceiptPrinter_Tests-Specta */;
+			targetProxy = ECA62ACACE14DF4E08942B42 /* PBXContainerItemProxy */;
+		};
+		740E966453D1B1B1BB085A32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+			target = B85253A4D96A3FD45B589B19 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter */;
+			targetProxy = 1DC2DCBC694CEF30C987951E /* PBXContainerItemProxy */;
+		};
+		9DC8D334D094ED9B941E48BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RMLStarReceiptPrinter_Tests-Expecta";
+			target = 55F69104BD2D58FE2EA6098F /* Pods-RMLStarReceiptPrinter_Tests-Expecta */;
+			targetProxy = 05A7B46C70E134F14511F6B0 /* PBXContainerItemProxy */;
+		};
+		B36D419AE628CDDBB0F19FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter";
+			target = 80C4046F98A8EE20B7BD4A11 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter */;
+			targetProxy = E0BB4D53871B73457349F21D /* PBXContainerItemProxy */;
+		};
+		D9DE7B8A01DA3D0EE17D1877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter";
+			target = B73812B53B6DF3FB44333C92 /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter */;
+			targetProxy = E8AB4BB6401B0C3048EFB994 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		044FE3C1F62A9FE928D5B798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29EE1F1B5CC1DA254386955B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1584367686978AD143A127D2 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta/Pods-RMLStarReceiptPrinter_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta/Pods-RMLStarReceiptPrinter_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34F9FF1A2CF24533BFC4C1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0D133DCCF7AABBCF4DEAFB /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53DCD219DD19153C910090E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAFF50A5459C76EAAB974257 /* Pods-RMLStarReceiptPrinter_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example/Pods-RMLStarReceiptPrinter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RMLStarReceiptPrinter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55B07BF2B7EE134BABAE6B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F90A53EB496EDCC6D96F4B1 /* Pods-RMLStarReceiptPrinter_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta/Pods-RMLStarReceiptPrinter_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta/Pods-RMLStarReceiptPrinter_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5730B846481E3CA8A5749FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5DC5A27C13C09C5FC9B9112C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8E5F819B315DDC8AEC112F /* Pods-RMLStarReceiptPrinter_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example/Pods-RMLStarReceiptPrinter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RMLStarReceiptPrinter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66954832DB874F14AFC3791C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0D133DCCF7AABBCF4DEAFB /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RMLStarReceiptPrinter_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		731667328F5AD68633CE019E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0F91A11AD4C39452160291 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		898C0CEF91B0116593347E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0F91A11AD4C39452160291 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RMLStarReceiptPrinter_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9ECB6AE9A882C17AA9DF10B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0D133DCCF7AABBCF4DEAFB /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A142CEAA373CEB5CF6C1240B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0D133DCCF7AABBCF4DEAFB /* Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RMLStarReceiptPrinter_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A59867718B26F58A5C791BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A156FA28C4189E97B138BE94 /* Pods-RMLStarReceiptPrinter_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests/Pods-RMLStarReceiptPrinter_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RMLStarReceiptPrinter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A64F855B82B2E6BE855B5899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0F91A11AD4C39452160291 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RMLStarReceiptPrinter_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B2A5B68EFD684FB71A6D40FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F90A53EB496EDCC6D96F4B1 /* Pods-RMLStarReceiptPrinter_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta/Pods-RMLStarReceiptPrinter_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Specta/Pods-RMLStarReceiptPrinter_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5A35588EAFBFA707DB19050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1584367686978AD143A127D2 /* Pods-RMLStarReceiptPrinter_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta/Pods-RMLStarReceiptPrinter_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-Expecta/Pods-RMLStarReceiptPrinter_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6646BC8F594B28BBFDFCBE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453020CAB3FD78CCEACDEBD3 /* Pods-RMLStarReceiptPrinter_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests/Pods-RMLStarReceiptPrinter_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RMLStarReceiptPrinter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F394A11381974C956539D70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0F91A11AD4C39452160291 /* Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RMLStarReceiptPrinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A18CB329E428CF9F699CF78 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-RMLStarReceiptPrinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66954832DB874F14AFC3791C /* Debug */,
+				A142CEAA373CEB5CF6C1240B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1619358664E45E2DC83823D0 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECB6AE9A882C17AA9DF10B4 /* Debug */,
+				34F9FF1A2CF24533BFC4C1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6596306B8BC11BBE0532FE41 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-Expecta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EE1F1B5CC1DA254386955B /* Debug */,
+				B5A35588EAFBFA707DB19050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC788B03DBE0F321CF64902 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59867718B26F58A5C791BA7 /* Debug */,
+				C6646BC8F594B28BBFDFCBE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		819C362560913174238D308E /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5730B846481E3CA8A5749FB2 /* Debug */,
+				044FE3C1F62A9FE928D5B798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B41D82580ADAA2CEC318D16 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DCD219DD19153C910090E9 /* Debug */,
+				5DC5A27C13C09C5FC9B9112C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E5011FD111C8F97A195622 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731667328F5AD68633CE019E /* Debug */,
+				F394A11381974C956539D70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E724A9AAF95BF40B94EBE960 /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B07BF2B7EE134BABAE6B13 /* Debug */,
+				B2A5B68EFD684FB71A6D40FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA0373BAEEBC3DAF3F46EDF /* Build configuration list for PBXNativeTarget "Pods-RMLStarReceiptPrinter_Tests-RMLStarReceiptPrinter-RMLStarReceiptPrinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898C0CEF91B0116593347E26 /* Debug */,
+				A64F855B82B2E6BE855B5899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A86F12E3144C565F1B2EFCA /* Project object */;
+}
