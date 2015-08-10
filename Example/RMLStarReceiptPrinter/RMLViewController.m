@@ -8,8 +8,11 @@
 
 #import "RMLViewController.h"
 #import "RMLStarReceiptPrinter.h"
+#import <StarIO/SMPort.h>
 
 @interface RMLViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 
 @end
 
@@ -18,6 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.versionLabel.text = [NSString stringWithFormat:@"StarIO v%@", [SMPort StarIOVersion]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
