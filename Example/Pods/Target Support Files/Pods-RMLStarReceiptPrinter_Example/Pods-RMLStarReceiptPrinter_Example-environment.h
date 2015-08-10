@@ -8,7 +8,7 @@
 
 // RMLStarReceiptPrinter
 #define COCOAPODS_POD_AVAILABLE_RMLStarReceiptPrinter
-#define COCOAPODS_VERSION_MAJOR_RMLStarReceiptPrinter 0
-#define COCOAPODS_VERSION_MINOR_RMLStarReceiptPrinter 1
+#define COCOAPODS_VERSION_MAJOR_RMLStarReceiptPrinter 1
+#define COCOAPODS_VERSION_MINOR_RMLStarReceiptPrinter 0
 #define COCOAPODS_VERSION_PATCH_RMLStarReceiptPrinter 0
 

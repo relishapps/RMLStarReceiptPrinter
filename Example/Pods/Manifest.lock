@@ -1,5 +1,5 @@
 PODS:
-  - RMLStarReceiptPrinter (0.1.0)
+  - RMLStarReceiptPrinter (1.0.0)
 
 DEPENDENCIES:
   - RMLStarReceiptPrinter (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RMLStarReceiptPrinter: ef5f90ef17ad5c14455ad562e5b93185eda50fff
+  RMLStarReceiptPrinter: e45d3f459494b9fe61c28d36b3049820c7a8e77a
 
 COCOAPODS: 0.37.2

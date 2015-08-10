@@ -24,14 +24,7 @@
     
     RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
     
-    [printer sendText:[NSString stringWithFormat:@"StarIO v%@", [SMPort StarIOVersion]]];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [printer sendText:[NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter ]]];
 }
 
 @end
