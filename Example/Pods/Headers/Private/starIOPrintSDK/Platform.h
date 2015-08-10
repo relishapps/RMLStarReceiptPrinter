@@ -1,0 +1,1 @@
+../../../starIOPrintSDK/Distributables/StarIO.framework/Versions/Current/Headers/starmicronics/Platform.h

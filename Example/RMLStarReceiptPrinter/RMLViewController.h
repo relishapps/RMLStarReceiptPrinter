@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Pawel Decowski. All rights reserved.
 //
 
+#import "RMLStarReceiptPrinter.h"
+
 @import UIKit;
 
 @interface RMLViewController : UIViewController

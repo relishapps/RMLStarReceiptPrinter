@@ -24,8 +24,8 @@
     ]
   },
   "dependencies": {
-    "StarIO": [
-      "~> 3.13.1"
+    "starIOPrintSDK": [
+
     ]
   }
 }

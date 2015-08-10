@@ -1,0 +1,6 @@
+framework module Pods_RMLStarReceiptPrinter_Tests {
+  umbrella header "Pods-RMLStarReceiptPrinter_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
