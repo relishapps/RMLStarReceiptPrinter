@@ -1,17 +1,18 @@
 {
   "name": "RMLStarReceiptPrinter",
   "version": "0.1.0",
-  "summary": "A short description of RMLStarReceiptPrinter.",
-  "description": "                       An optional longer description of RMLStarReceiptPrinter\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RMLStarReceiptPrinter",
+  "summary": "A wrapper for StarIO",
+  "description": "                       RMLStarReceipt printer is a wrapper for StarIO that makes it easy to send commands to the printer.\n",
+  "homepage": "https://github.com/relishmedia/RMLStarReceiptPrinter",
   "license": "MIT",
   "authors": {
     "Pawel Decowski": "pawel.decowski@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RMLStarReceiptPrinter.git",
+    "git": "https://github.com/relishmedia/RMLStarReceiptPrinter.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/relishmedia>",
   "platforms": {
     "ios": "7.0"
   },
@@ -20,6 +21,11 @@
   "resource_bundles": {
     "RMLStarReceiptPrinter": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "StarIO": [
+      "~> 3.13.1"
     ]
   }
 }
