@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RMLStarReceiptPrinter"
 ```
-Once it's installed via pod, add the ```StarIO.framework``` from [here]() to your project.
+Once it's installed via pod, add the [```StarIO.framework```]() to your project.
 
 ## Introduction
 
@@ -32,11 +32,7 @@ Star Receipt Printer. A wrapper for StarIO's iOS SDK
 
 * * *
 
-<div class="declaration_indent">
-
 <pre>- (<span class="type">instancetype</span>)<span class="var">init</span>;  </pre>
-
-</div>
 
 ##### <font face="Lucida Grande,Helvetica,Arial">Return Value</font>
 
