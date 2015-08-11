@@ -265,8 +265,6 @@ Resets to default width and height
 
 </dd>
 
-dl>
-
 <dt>RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight</dt>
 
 <dd>
@@ -274,8 +272,6 @@ dl>
 Makes characters double height, but maintains width
 
 </dd>
-
-dl>
 
 <dt>RMLStarReceiptPrinterCharacterExpansionDoubleWidthDoubleHeight</dt>
 
