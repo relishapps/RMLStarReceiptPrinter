@@ -75,8 +75,8 @@
     return RMLStarReceiptPrinterStatusOnline;
 }
 
-- (void)setCodePage:(char)codePage {
-    char command[] = {0x1b, 0x52, codePage};
+- (void)setCharacterSet:(RMLStarReceiptPrinterCharacterSet)characterSet {
+    char command[] = {0x1b, 0x52, characterSet};
     
     [self.buffer appendBytes:command length:sizeof(command)];
 }
