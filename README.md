@@ -669,16 +669,3 @@ Pawel Decowski, pawel.decowski@gmail.com
 ## License
 
 RMLStarReceiptPrinter is available under the MIT license. See the LICENSE file for more info.
-
-* * *
-
-
-
-
-<div class="hd_copyright_and_timestamp">
-
-© 2015 Relish Media Ltd. All rights reserved.
-
-Last Updated: Tuesday, August 11, 2015
-
-</div>
