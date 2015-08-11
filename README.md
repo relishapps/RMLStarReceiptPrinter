@@ -24,41 +24,6 @@ pod "RMLStarReceiptPrinter"
 
 Pawel Decowski, pawel.decowski@gmail.com
 
-## License
-
-RMLStarReceiptPrinter is available under the MIT license. See the LICENSE file for more info.
-
-
-<a name="//apple_ref/doc/header/RMLStarReceiptPrinter.h"></a>
-
-<a name="top"></a>
-
-# <a name="RMLStarReceiptPrinter.h">RMLStarReceiptPrinter.h</a>
-
-<div class="spec_sheet_info_box">
-
-| **Author:** | 
-
-<div style="margin-bottom:1px">
-
-<div class="content_text">Pawel Decowski</div>
-
-</div>
-
-|
-| **Includes:** | 
-
-<div style="margin-bottom:1px">
-
-<div class="content_text"><Foundation/Foundation.h>
-<StarIO/SMPort.h></div>
-
-</div>
-
-|
-
-</div>
-
 ## Introduction
 
 Star Receipt Printer. A wrapper for StarIO's iOS SDK
@@ -1267,4 +1232,6 @@ Last Updated: Tuesday, August 11, 2015
 
 </div>
 
-|
+## License
+
+RMLStarReceiptPrinter is available under the MIT license. See the LICENSE file for more info.
