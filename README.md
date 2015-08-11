@@ -1,6 +1,6 @@
 # RMLStarReceiptPrinter
 
-[![CI Status](http://img.shields.io/travis/Pawel%20Decowski/RMLStarReceiptPrinter.svg?style=flat)](https://travis-ci.org/Pawel Decowski/RMLStarReceiptPrinter)
+[![CI Status](http://img.shields.io/travis/Pawel%20Decowski/RMLStarReceiptPrinter.svg?style=flat)](https://travis-ci.org/Pawel%20Decowski/RMLStarReceiptPrinter)
 [![Version](https://img.shields.io/cocoapods/v/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 [![License](https://img.shields.io/cocoapods/l/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 [![Platform](https://img.shields.io/cocoapods/p/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RMLStarReceiptPrinter"
 ```
-
+Once it's installed via pod, add the ```StarIO.framework``` from [here]() to your project.
 
 ## Introduction
 
@@ -28,9 +28,7 @@ Star Receipt Printer. A wrapper for StarIO's iOS SDK
 
 * * *
 
-<a name="//apple_ref/c/func/init"></a>
-
-### <a name="init">init</a>
+### init
 
 * * *
 
