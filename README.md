@@ -321,26 +321,6 @@ Returns the current status of the printer (Read-only)
 
 * * *
 
-<a name="HeaderDoc_datatypes"></a>
-
-## Typedefs
-
-<dl>
-
-<dt><tt>[RMLStarReceiptPrinterCharacterExpansion](index.html#//apple_ref/doc/title:tdef/RMLStarReceiptPrinterCharacterExpansion)</tt></dt>
-
-<dt><tt>[RMLStarReceiptPrinterCharacterSet](index.html#//apple_ref/doc/title:tdef/RMLStarReceiptPrinterCharacterSet)</tt></dt>
-
-<dt><tt>[RMLStarReceiptPrinterStatus](index.html#//apple_ref/doc/title:tdef/RMLStarReceiptPrinterStatus)</tt></dt>
-
-<dt><tt>[RMLStarReceiptPrinterTextAlignment](index.html#//apple_ref/doc/title:tdef/RMLStarReceiptPrinterTextAlignment)</tt></dt>
-
-<dt><tt>[RMLStarReceiptPrinterTextEmphasis](index.html#//apple_ref/doc/title:tdef/RMLStarReceiptPrinterTextEmphasis)</tt></dt>
-
-</dl>
-
-* * *
-
 <a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterCharacterExpansion"></a>
 
 ### <a name="RMLStarReceiptPrinterCharacterExpansion">RMLStarReceiptPrinterCharacterExpansion</a>
