@@ -5,11 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 [![Platform](https://img.shields.io/cocoapods/p/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 
-## Usage
 
-To run the example project, clone the repo, and run pod install from the Example directory first.
+## Introduction
 
-## Requirements
+Star Receipt Printer. A wrapper for StarIO's iOS SDK
 
 ## Installation
 
@@ -21,88 +20,76 @@ pod "RMLStarReceiptPrinter"
 ```
 Once it's installed via pod, add the [```StarIO.framework```]() to your project.
 
-## Introduction
+## Usage
 
-Star Receipt Printer. A wrapper for StarIO's iOS SDK
+To run the example project, clone the repo, and run pod install from the Example directory first.
+
+To use RMLStarReceiptPrinter in your existing project, once you've installed it, add ```#import "RMLStarReceiptPrinter.h"``` to the header file where you want to use it, and initialize it;
+
+```ruby
+RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
+```
+Use the methods below to then what you need, to the printer
 
 
 * * *
+## Methods
 
 ### init
+```ruby
+- (instancetype)init;
+```
 
-* * *
-
-<pre>- (<span class="type">instancetype</span>)<span class="var">init</span>;  </pre>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Return Value</font>
+##### Return Value
 
 instance type of RMLStarReceiptPrinter
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Used to initialize the printer instance (Not used)
 
-* * *
 
-<a name="//apple_ref/c/func/print"></a>
 
-### <a name="print">print</a>
+### print
 
-* * *
+```ruby
+- (BOOL)print;
+```
 
-<div class="declaration_indent">
-
-<pre>- (<span class="type">BOOL</span>)<span class="var">print</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Return Value</font>
+##### Return Value
 
 a bool value based on the success of the pritner printing the receipt
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 The main method used to tell the printer to print the receipt
 
-* * *
 
-<a name="//apple_ref/c/func/sendSeparator"></a>
 
-### <a name="sendSeparator">sendSeparator</a>
+### sendSeparator
 
-* * *
+```ruby
+- (void)sendSeparator;
+```
 
-<div class="declaration_indent">
-
-<pre>- (<span class="type">void</span>)<span class="var">sendSeparator</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Sends a string of 32 hyphens ('-') to the printer, followed by a line break to help separate items on the receipt.
 
-* * *
 
-<a name="//apple_ref/c/func/sendText:"></a>
 
-### <a name="sendText:">sendText:</a>
+### sendText:
 
-* * *
+```ruby
+- (void)sendText:(NSString *)text;
+```
 
-<div class="declaration_indent">
+##### Parameters
 
-<pre>- (<span class="type">void</span>)<span class="function">sendText</span>:(<span class="type">NSString</span> <span class="type">*</span>)<span class="var">text</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/sendText:/text"></a>text</dt>
+<dt>text</dt>
 
 <dd>
 
@@ -112,41 +99,28 @@ an NSString for the printer to print
 
 </dl>
 
-</div>
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Used to send a single line of text to the printer to print.
 
 **WARNING:**
 
-<div class="warning_indent">
+Format the text before you use this method (i.e. send all emphasis and alignment before ```sendtext:```)
 
-Format the text before you use this method (i.e. send all @c emphasis and
 
-</div>
 
-* * *
+### setCharacterExpansion:
 
-<a name="//apple_ref/c/func/setCharacterExpansion:"></a>
+```ruby
+- (void)setCharacterExpansion:(RMLStarReceiptPrinterCharacterExpansion)expansion;
+```
 
-### <a name="setCharacterExpansion:">setCharacterExpansion:</a>
-
-* * *
-
-<div class="declaration_indent">
-
-<pre>- (<span class="type">void</span>)<span class="function">setCharacterExpansion</span>:(<span class="type">RMLStarReceiptPrinterCharacterExpansion</span>)<span class="var">expansion</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
+##### Parameters
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setCharacterExpansion:/expansion"></a>expansion</dt>
+<dt>expansion</dt>
 
 <dd>
 
@@ -156,33 +130,24 @@ one of the RMLStarReceiptPrinterCharacterExpansion options
 
 </dl>
 
-</div>
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Used to set the size of the characters you send to the printer
 
-* * *
 
-<a name="//apple_ref/c/func/setCharacterSet:"></a>
 
-### <a name="setCharacterSet:">setCharacterSet:</a>
+### setCharacterSet:
 
-* * *
+```ruby
+- (void)setCharacterSet:(RMLStarReceiptPrinterCharacterSet)characterSet;
+```
 
-<div class="declaration_indent">
-
-<pre>- (<span class="type">void</span>)<span class="function">setCharacterSet</span>:(<span class="type">RMLStarReceiptPrinterCharacterSet</span>)<span class="var">characterSet</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
+##### Parameters
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setCharacterSet:/characterSet"></a>characterSet</dt>
+<dt>characterSet</dt>
 
 <dd>
 
@@ -192,33 +157,23 @@ RMLStarReceiptPrinterCharacterSet on the character set you want
 
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Set the character encoding set
 
-* * *
 
-<a name="//apple_ref/c/func/setTextAlignment:"></a>
 
-### <a name="setTextAlignment:">setTextAlignment:</a>
+### setTextAlignment:
 
-* * *
+```ruby
+- (void)setTextAlignment:(RMLStarReceiptPrinterTextAlignment)alignment;
+```
 
-<div class="declaration_indent">
-
-<pre>- (<span class="type">void</span>)<span class="function">setTextAlignment</span>:(<span class="type">RMLStarReceiptPrinterTextAlignment</span>)<span class="var">alignment</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
+##### Parameters
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setTextAlignment:/alignment"></a>alignment</dt>
+<dt>alignment</dt>
 
 <dd>
 
@@ -228,33 +183,23 @@ The alignment that you want to set (as RMLStarReceiptPrinterTextAlignment)
 
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Adjust the alignment of the text on the receipt
 
-* * *
 
-<a name="//apple_ref/c/func/setTextEmphasis:"></a>
 
-### <a name="setTextEmphasis:">setTextEmphasis:</a>
+### setTextEmphasis:
 
-* * *
+```ruby
+- (void)setTextEmphasis:(RMLStarReceiptPrinterTextEmphasis)emphasis;
+```
 
-<div class="declaration_indent">
-
-<pre>- (<span class="type">void</span>)<span class="function">setTextEmphasis</span>:(<span class="type">RMLStarReceiptPrinterTextEmphasis</span>)<span class="var">emphasis</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
+##### Parameters
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setTextEmphasis:/emphasis"></a>emphasis</dt>
+<dt>emphasis</dt>
 
 <dd>
 
@@ -264,84 +209,61 @@ RMLStarReceiptPrinterTextEmphasisIsOff, RMLStarReceiptPrinterTextEmphasisIsOn
 
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Using the RMLStarReceiptPrinterTextEmphasis, you can set whether the following test is emphasised or not
 
-* * *
 
-<a name="//apple_ref/c/func/starIOVersion"></a>
 
-### <a name="starIOVersion">starIOVersion</a>
+### starIOVersion
 
-* * *
+```ruby
++ (NSString *)starIOVersion;
+```
 
-<div class="declaration_indent">
-
-<pre>+ (<span class="type">NSString</span> <span class="type">*</span>)<span class="var">starIOVersion</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Return Value</font>
+##### Return Value
 
 an NSString value of the StarIO framework version number
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Returns the current version of the StarIO framework in use
 
-* * *
 
-<a name="//apple_ref/c/func/status"></a>
 
-### <a name="status">status</a>
+### status
 
-* * *
+```ruby
+- (RMLStarReceiptPrinterStatus)status;
+```
 
-<div class="declaration_indent">
-
-<pre>- (<span class="type">RMLStarReceiptPrinterStatus</span>)<span class="var">status</span>;  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Return Value</font>
+##### Return Value
 
 The printer's current status (as RMLStarReceiptPrinterStatus)
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Returns the current status of the printer (Read-only)
 
-* * *
 
-<a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterCharacterExpansion"></a>
 
-### <a name="RMLStarReceiptPrinterCharacterExpansion">RMLStarReceiptPrinterCharacterExpansion</a>
+### RMLStarReceiptPrinterCharacterExpansion
 
-* * *
-
-<div class="declaration_indent">
-
-<pre><span class="keyword">typedef</span> <span class="function">NS_ENUM</span>(<span class="var">char</span>, <span class="var">RMLStarReceiptPrinterCharacterExpansion</span>){  
-<span class="type">RMLStarReceiptPrinterCharacterExpansionNone</span> = <span class="number">0</span>,  <span class="type">RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight</span> =
+```ruby
+typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterExpansion){  
+RMLStarReceiptPrinterCharacterExpansionNone = 0,  RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight =
 (
-<span class="number">1</span> << <span class="number">0</span>)|( <span class="number">0</span>),  <span class="type">RMLStarReceiptPrinterCharacterExpansionDoubleWidthDoubleHeight</span> =
+1 << 0)|( 0),  RMLStarReceiptPrinterCharacterExpansionDoubleWidthDoubleHeight =
 (
-<span class="number">1</span> << <span class="number">0</span>)|(
-<span class="number">1</span> << <span class="number">4</span>) 
-};  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Constants</font>
-
-<div class="param_indent">
+1 << 0)|(
+1 << 4) 
+};
+```
+##### Constants
 
 <dl>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterCharacterExpansionNone">RMLStarReceiptPrinterCharacterExpansionNone</a></dt>
+<dt>RMLStarReceiptPrinterCharacterExpansionNone</dt>
 
 <dd>
 
@@ -349,42 +271,53 @@ Resets to default width and height
 
 </dd>
 
+dl>
+
+<dt>RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight</dt>
+
+<dd>
+
+Makes characters double height, but maintains width
+
+</dd>
+
+dl>
+
+<dt>RMLStarReceiptPrinterCharacterExpansionDoubleWidthDoubleHeight</dt>
+
+<dd>
+
+Makes characters double height and width
+
+</dd>
+
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 An option for changing the height and/or width of the next charaters sent to the printer
 
-* * *
 
-<a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterCharacterSet"></a>
 
-### <a name="RMLStarReceiptPrinterCharacterSet">RMLStarReceiptPrinterCharacterSet</a>
 
-* * *
+### RMLStarReceiptPrinterCharacterSet
 
-<div class="declaration_indent">
+```ruby
+typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){  
+RMLStarReceiptPrinterCharacterSetUSA,  RMLStarReceiptPrinterCharacterSetFrance,  
+RMLStarReceiptPrinterCharacterSetGermany,  RMLStarReceiptPrinterCharacterSetUK,  
+RMLStarReceiptPrinterCharacterSetDenmark,  RMLStarReceiptPrinterCharacterSetSweden,  
+RMLStarReceiptPrinterCharacterSetItaly,  RMLStarReceiptPrinterCharacterSetSpain,  
+RMLStarReceiptPrinterCharacterSetJapan,  RMLStarReceiptPrinterCharacterSetNorway,  
+RMLStarReceiptPrinterCharacterSetDenmark2 
+};
+```
 
-<pre><span class="keyword">typedef</span> <span class="function">NS_ENUM</span>(<span class="var">char</span>, <span class="var">RMLStarReceiptPrinterCharacterSet</span>){  
-<span class="var">RMLStarReceiptPrinterCharacterSetUSA</span>,  <span class="var">RMLStarReceiptPrinterCharacterSetFrance</span>,  
-<span class="var">RMLStarReceiptPrinterCharacterSetGermany</span>,  <span class="var">RMLStarReceiptPrinterCharacterSetUK</span>,  
-<span class="var">RMLStarReceiptPrinterCharacterSetDenmark</span>,  <span class="var">RMLStarReceiptPrinterCharacterSetSweden</span>,  
-<span class="var">RMLStarReceiptPrinterCharacterSetItaly</span>,  <span class="var">RMLStarReceiptPrinterCharacterSetSpain</span>,  
-<span class="var">RMLStarReceiptPrinterCharacterSetJapan</span>,  <span class="var">RMLStarReceiptPrinterCharacterSetNorway</span>,  
-<span class="var">RMLStarReceiptPrinterCharacterSetDenmark2</span> 
-};  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
+##### Parameters
 
 <dl>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetUSA"></a>RMLStarReceiptPrinterCharacterSetUSA</dt>
+<dt>RMLStarReceiptPrinterCharacterSetUSA</dt>
 
 <dd>
 
@@ -392,7 +325,7 @@ USA character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetFrance"></a>RMLStarReceiptPrinterCharacterSetFrance</dt>
+<dt>RMLStarReceiptPrinterCharacterSetFrance</dt>
 
 <dd>
 
@@ -400,7 +333,7 @@ France character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetGermany"></a>RMLStarReceiptPrinterCharacterSetGermany</dt>
+<dt>RMLStarReceiptPrinterCharacterSetGermany</dt>
 
 <dd>
 
@@ -408,7 +341,7 @@ Germany character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetUK"></a>RMLStarReceiptPrinterCharacterSetUK</dt>
+<dt>RMLStarReceiptPrinterCharacterSetUK</dt>
 
 <dd>
 
@@ -416,7 +349,7 @@ UK character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetDenmark"></a>RMLStarReceiptPrinterCharacterSetDenmark</dt>
+<dt>RMLStarReceiptPrinterCharacterSetDenmark</dt>
 
 <dd>
 
@@ -424,7 +357,7 @@ Denmark character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetSweden"></a>RMLStarReceiptPrinterCharacterSetSweden</dt>
+<dt>RMLStarReceiptPrinterCharacterSetSweden</dt>
 
 <dd>
 
@@ -432,7 +365,7 @@ Sweden character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetItaly"></a>RMLStarReceiptPrinterCharacterSetItaly</dt>
+<dt>RMLStarReceiptPrinterCharacterSetItaly</dt>
 
 <dd>
 
@@ -440,7 +373,7 @@ Italy character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetSpain"></a>RMLStarReceiptPrinterCharacterSetSpain</dt>
+<dt>RMLStarReceiptPrinterCharacterSetSpain</dt>
 
 <dd>
 
@@ -448,7 +381,7 @@ Spain character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetJapan"></a>RMLStarReceiptPrinterCharacterSetJapan</dt>
+<dt>RMLStarReceiptPrinterCharacterSetJapan</dt>
 
 <dd>
 
@@ -456,7 +389,7 @@ Japan character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetNorway"></a>RMLStarReceiptPrinterCharacterSetNorway</dt>
+<dt>RMLStarReceiptPrinterCharacterSetNorway</dt>
 
 <dd>
 
@@ -464,7 +397,7 @@ Norway character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetDenmark2"></a>RMLStarReceiptPrinterCharacterSetDenmark2</dt>
+<dt>RMLStarReceiptPrinterCharacterSetDenmark2</dt>
 
 <dd>
 
@@ -474,37 +407,27 @@ Denmark 2 character set
 
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Values to set the character set of the next text sent to the printer to.
 
-* * *
 
-<a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterStatus"></a>
 
-### <a name="RMLStarReceiptPrinterStatus">RMLStarReceiptPrinterStatus</a>
+### RMLStarReceiptPrinterStatus
 
-* * *
+```ruby
+typedef NS_ENUM(char, RMLStarReceiptPrinterStatus){  
+RMLStarReceiptPrinterStatusOffline,  RMLStarReceiptPrinterStatusOfflineCoverOpen,  
+RMLStarReceiptPrinterStatusOfflineOutOfPaper,  RMLStarReceiptPrinterStatusOnline,  
+RMLStarReceiptPrinterStatusError 
+};
+```
 
-<div class="declaration_indent">
-
-<pre><span class="keyword">typedef</span> <span class="function">NS_ENUM</span>(<span class="var">char</span>, <span class="var">RMLStarReceiptPrinterStatus</span>){  
-<span class="var">RMLStarReceiptPrinterStatusOffline</span>,  <span class="var">RMLStarReceiptPrinterStatusOfflineCoverOpen</span>,  
-<span class="var">RMLStarReceiptPrinterStatusOfflineOutOfPaper</span>,  <span class="var">RMLStarReceiptPrinterStatusOnline</span>,  
-<span class="var">RMLStarReceiptPrinterStatusError</span> 
-};  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Parameters</font>
-
-<div class="param_indent">
+##### Parameters
 
 <dl>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOffline"></a>RMLStarReceiptPrinterStatusOffline</dt>
+<dt><RMLStarReceiptPrinterStatusOffline</dt>
 
 <dd>
 
@@ -512,7 +435,7 @@ The printer is either powered off, or not connected to the device
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOfflineCoverOpen"></a>RMLStarReceiptPrinterStatusOfflineCoverOpen</dt>
+<dt>RMLStarReceiptPrinterStatusOfflineCoverOpen</dt>
 
 <dd>
 
@@ -520,7 +443,7 @@ The printer cover is open
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOfflineOutOfPaper"></a>RMLStarReceiptPrinterStatusOfflineOutOfPaper</dt>
+<dt>RMLStarReceiptPrinterStatusOfflineOutOfPaper</dt>
 
 <dd>
 
@@ -528,7 +451,7 @@ The printer is out of paper
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOnline"></a>RMLStarReceiptPrinterStatusOnline</dt>
+<dt>RMLStarReceiptPrinterStatusOnline</dt>
 
 <dd>
 
@@ -536,7 +459,7 @@ The printer is online and ready to be used
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusError"></a>RMLStarReceiptPrinterStatusError</dt>
+<dt>RMLStarReceiptPrinterStatusError</dt>
 
 <dd>
 
@@ -546,36 +469,27 @@ The printer has an error
 
 </dl>
 
-</div>
 
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 The current status of the printer
 
-* * *
 
-<a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterTextAlignment"></a>
 
-### <a name="RMLStarReceiptPrinterTextAlignment">RMLStarReceiptPrinterTextAlignment</a>
+### RMLStarReceiptPrinterTextAlignment
 
-* * *
+```ruby
+typedef NS_ENUM(char, RMLStarReceiptPrinterTextAlignment){  
+RMLStarReceiptPrinterTextAlignmentLeft = 0,  RMLStarReceiptPrinterTextAlignmentCenter = 
+1,  RMLStarReceiptPrinterTextAlignmentRight = 2 
+};
+```
 
-<div class="declaration_indent">
-
-<pre><span class="keyword">typedef</span> <span class="function">NS_ENUM</span>(<span class="var">char</span>, <span class="var">RMLStarReceiptPrinterTextAlignment</span>){  
-<span class="type">RMLStarReceiptPrinterTextAlignmentLeft</span> = <span class="number">0</span>,  <span class="type">RMLStarReceiptPrinterTextAlignmentCenter</span> = 
-<span class="number">1</span>,  <span class="type">RMLStarReceiptPrinterTextAlignmentRight</span> = <span class="number">2</span> 
-};  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Constants</font>
-
-<div class="param_indent">
+##### Constants
 
 <dl>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentLeft">RMLStarReceiptPrinterTextAlignmentLeft</a></dt>
+<dt>RMLStarReceiptPrinterTextAlignmentLeft</a></dt>
 
 <dd>
 
@@ -583,7 +497,7 @@ Left alignment
 
 </dd>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentCenter">RMLStarReceiptPrinterTextAlignmentCenter</a></dt>
+<dt>RMLStarReceiptPrinterTextAlignmentCenter</a></dt>
 
 <dd>
 
@@ -591,7 +505,7 @@ Center alignment
 
 </dd>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentRight">RMLStarReceiptPrinterTextAlignmentRight</a></dt>
+<dt>RMLStarReceiptPrinterTextAlignmentRight</a></dt>
 
 <dd>
 
@@ -601,36 +515,26 @@ Right alignment
 
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Values to set the alignment of next text sent to the printer.
 
-* * *
 
-<a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterTextEmphasis"></a>
 
-### <a name="RMLStarReceiptPrinterTextEmphasis">RMLStarReceiptPrinterTextEmphasis</a>
+### RMLStarReceiptPrinterTextEmphasis
 
-* * *
+```ruby
+typedef NS_ENUM(char, RMLStarReceiptPrinterTextEmphasis){  
+RMLStarReceiptPrinterTextEmphasisOff = 0,  RMLStarReceiptPrinterTextEmphasisOn = 
+1 
+};
+```
 
-<div class="declaration_indent">
-
-<pre><span class="keyword">typedef</span> <span class="function">NS_ENUM</span>(<span class="var">char</span>, <span class="var">RMLStarReceiptPrinterTextEmphasis</span>){  
-<span class="type">RMLStarReceiptPrinterTextEmphasisOff</span> = <span class="number">0</span>,  <span class="type">RMLStarReceiptPrinterTextEmphasisOn</span> = 
-<span class="number">1</span> 
-};  </pre>
-
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Constants</font>
-
-<div class="param_indent">
+##### Constants
 
 <dl>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextEmphasisOff">RMLStarReceiptPrinterTextEmphasisOff</a></dt>
+<dt>RMLStarReceiptPrinterTextEmphasisOff</a></dt>
 
 <dd>
 
@@ -638,7 +542,7 @@ Turns off the emphasis
 
 </dd>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextEmphasisOn">RMLStarReceiptPrinterTextEmphasisOn</a></dt>
+<dt>RMLStarReceiptPrinterTextEmphasisOn</a></dt>
 
 <dd>
 
@@ -648,9 +552,7 @@ Turns on the emphasis
 
 </dl>
 
-</div>
-
-##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+##### Discussion
 
 Equal to setting the text to bold.
 
