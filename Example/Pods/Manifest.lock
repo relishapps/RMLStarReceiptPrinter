@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RMLStarReceiptPrinter: e45d3f459494b9fe61c28d36b3049820c7a8e77a
+  RMLStarReceiptPrinter: dc485e2b5e884acea5a22e5c933fdcd67b41e931
 
 COCOAPODS: 0.37.2

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <StarIO/SMPort.h>
 
 typedef NS_ENUM(char, RMLStarReceiptPrinterStatus) {
