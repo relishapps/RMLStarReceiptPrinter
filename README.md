@@ -7,7 +7,7 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run pod install from the Example directory first.
 
 ## Requirements
 
@@ -16,9 +16,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 RMLStarReceiptPrinter is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
+ruby
 pod "RMLStarReceiptPrinter"
-```
+
 
 ## Introduction
 
@@ -107,7 +107,7 @@ Sends a string of 32 hyphens ('-') to the printer, followed by a line break to h
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/sendText:/text"></a>`text`</dt>
+<dt><a name="//apple_ref/doc/methodparam/sendText:/text"></a>text</dt>
 
 <dd>
 
@@ -151,7 +151,7 @@ Format the text before you use this method (i.e. send all @c emphasis and
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setCharacterExpansion:/expansion"></a>`expansion`</dt>
+<dt><a name="//apple_ref/doc/methodparam/setCharacterExpansion:/expansion"></a>expansion</dt>
 
 <dd>
 
@@ -187,7 +187,7 @@ Used to set the size of the characters you send to the printer
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setCharacterSet:/characterSet"></a>`characterSet`</dt>
+<dt><a name="//apple_ref/doc/methodparam/setCharacterSet:/characterSet"></a>characterSet</dt>
 
 <dd>
 
@@ -223,7 +223,7 @@ Set the character encoding set
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setTextAlignment:/alignment"></a>`alignment`</dt>
+<dt><a name="//apple_ref/doc/methodparam/setTextAlignment:/alignment"></a>alignment</dt>
 
 <dd>
 
@@ -259,7 +259,7 @@ Adjust the alignment of the text on the receipt
 
 <dl>
 
-<dt><a name="//apple_ref/doc/methodparam/setTextEmphasis:/emphasis"></a>`emphasis`</dt>
+<dt><a name="//apple_ref/doc/methodparam/setTextEmphasis:/emphasis"></a>emphasis</dt>
 
 <dd>
 
@@ -366,7 +366,7 @@ Returns the current status of the printer (Read-only)
 
 <dl>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterCharacterExpansionNone">`RMLStarReceiptPrinterCharacterExpansionNone`</a></dt>
+<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterCharacterExpansionNone">RMLStarReceiptPrinterCharacterExpansionNone</a></dt>
 
 <dd>
 
@@ -425,7 +425,7 @@ char
 
 <dl>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetUSA"></a>`RMLStarReceiptPrinterCharacterSetUSA`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetUSA"></a>RMLStarReceiptPrinterCharacterSetUSA</dt>
 
 <dd>
 
@@ -433,7 +433,7 @@ USA character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetFrance"></a>`RMLStarReceiptPrinterCharacterSetFrance`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetFrance"></a>RMLStarReceiptPrinterCharacterSetFrance</dt>
 
 <dd>
 
@@ -441,7 +441,7 @@ France character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetGermany"></a>`RMLStarReceiptPrinterCharacterSetGermany`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetGermany"></a>RMLStarReceiptPrinterCharacterSetGermany</dt>
 
 <dd>
 
@@ -449,7 +449,7 @@ Germany character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetUK"></a>`RMLStarReceiptPrinterCharacterSetUK`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetUK"></a>RMLStarReceiptPrinterCharacterSetUK</dt>
 
 <dd>
 
@@ -457,7 +457,7 @@ UK character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetDenmark"></a>`RMLStarReceiptPrinterCharacterSetDenmark`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetDenmark"></a>RMLStarReceiptPrinterCharacterSetDenmark</dt>
 
 <dd>
 
@@ -465,7 +465,7 @@ Denmark character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetSweden"></a>`RMLStarReceiptPrinterCharacterSetSweden`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetSweden"></a>RMLStarReceiptPrinterCharacterSetSweden</dt>
 
 <dd>
 
@@ -473,7 +473,7 @@ Sweden character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetItaly"></a>`RMLStarReceiptPrinterCharacterSetItaly`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetItaly"></a>RMLStarReceiptPrinterCharacterSetItaly</dt>
 
 <dd>
 
@@ -481,7 +481,7 @@ Italy character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetSpain"></a>`RMLStarReceiptPrinterCharacterSetSpain`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetSpain"></a>RMLStarReceiptPrinterCharacterSetSpain</dt>
 
 <dd>
 
@@ -489,7 +489,7 @@ Spain character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetJapan"></a>`RMLStarReceiptPrinterCharacterSetJapan`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetJapan"></a>RMLStarReceiptPrinterCharacterSetJapan</dt>
 
 <dd>
 
@@ -497,7 +497,7 @@ Japan character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetNorway"></a>`RMLStarReceiptPrinterCharacterSetNorway`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetNorway"></a>RMLStarReceiptPrinterCharacterSetNorway</dt>
 
 <dd>
 
@@ -505,7 +505,7 @@ Norway character set
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetDenmark2"></a>`RMLStarReceiptPrinterCharacterSetDenmark2`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterCharacterSet/RMLStarReceiptPrinterCharacterSetDenmark2"></a>RMLStarReceiptPrinterCharacterSetDenmark2</dt>
 
 <dd>
 
@@ -561,7 +561,7 @@ NS_ENUM
 
 <dl>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOffline"></a>`RMLStarReceiptPrinterStatusOffline`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOffline"></a>RMLStarReceiptPrinterStatusOffline</dt>
 
 <dd>
 
@@ -569,7 +569,7 @@ The printer is either powered off, or not connected to the device
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOfflineCoverOpen"></a>`RMLStarReceiptPrinterStatusOfflineCoverOpen`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOfflineCoverOpen"></a>RMLStarReceiptPrinterStatusOfflineCoverOpen</dt>
 
 <dd>
 
@@ -577,7 +577,7 @@ The printer cover is open
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOfflineOutOfPaper"></a>`RMLStarReceiptPrinterStatusOfflineOutOfPaper`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOfflineOutOfPaper"></a>RMLStarReceiptPrinterStatusOfflineOutOfPaper</dt>
 
 <dd>
 
@@ -585,7 +585,7 @@ The printer is out of paper
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOnline"></a>`RMLStarReceiptPrinterStatusOnline`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusOnline"></a>RMLStarReceiptPrinterStatusOnline</dt>
 
 <dd>
 
@@ -593,7 +593,7 @@ The printer is online and ready to be used
 
 </dd>
 
-<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusError"></a>`RMLStarReceiptPrinterStatusError`</dt>
+<dt><a name="//apple_ref/doc/typedeffield/RMLStarReceiptPrinterStatus/RMLStarReceiptPrinterStatusError"></a>RMLStarReceiptPrinterStatusError</dt>
 
 <dd>
 
@@ -648,7 +648,7 @@ NS_ENUM
 
 <dl>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentLeft">`RMLStarReceiptPrinterTextAlignmentLeft`</a></dt>
+<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentLeft">RMLStarReceiptPrinterTextAlignmentLeft</a></dt>
 
 <dd>
 
@@ -656,7 +656,7 @@ Left alignment
 
 </dd>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentCenter">`RMLStarReceiptPrinterTextAlignmentCenter`</a></dt>
+<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentCenter">RMLStarReceiptPrinterTextAlignmentCenter</a></dt>
 
 <dd>
 
@@ -664,7 +664,7 @@ Center alignment
 
 </dd>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentRight">`RMLStarReceiptPrinterTextAlignmentRight`</a></dt>
+<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextAlignmentRight">RMLStarReceiptPrinterTextAlignmentRight</a></dt>
 
 <dd>
 
@@ -719,7 +719,7 @@ NS_ENUM
 
 <dl>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextEmphasisOff">`RMLStarReceiptPrinterTextEmphasisOff`</a></dt>
+<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextEmphasisOff">RMLStarReceiptPrinterTextEmphasisOff</a></dt>
 
 <dd>
 
@@ -727,7 +727,7 @@ Turns off the emphasis
 
 </dd>
 
-<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextEmphasisOn">`RMLStarReceiptPrinterTextEmphasisOn`</a></dt>
+<dt><a name="//apple_ref/doc/title:econst/RMLStarReceiptPrinterTextEmphasisOn">RMLStarReceiptPrinterTextEmphasisOn</a></dt>
 
 <dd>
 
