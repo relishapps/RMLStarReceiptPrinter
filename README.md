@@ -23,7 +23,7 @@ To use RMLStarReceiptPrinter in your existing project, once you've installed it,
 ```ruby
 RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
 ```
-Use the methods below to then what you need, to the printer
+Use the methods below to then do what you need, to the printer
 
 
 * * *
