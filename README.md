@@ -672,6 +672,9 @@ RMLStarReceiptPrinter is available under the MIT license. See the LICENSE file f
 
 * * *
 
+
+
+
 <div class="hd_copyright_and_timestamp">
 
 © 2015 Relish Media Ltd. All rights reserved.
