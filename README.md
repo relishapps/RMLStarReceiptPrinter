@@ -363,22 +363,6 @@ Resets to default width and height
 
 An option for changing the height and/or width of the next charaters sent to the printer
 
-**See Also**
-
-<div class="list_indent">
-
-<dl>
-
-<dt>
-
-char
-
-</dt>
-
-</dl>
-
-</div>
-
 * * *
 
 <a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterCharacterSet"></a>
@@ -502,22 +486,6 @@ Denmark 2 character set
 
 Values to set the character set of the next text sent to the printer to.
 
-**See Also**
-
-<div class="list_indent">
-
-<dl>
-
-<dt>
-
-NS_ENUM
-
-</dt>
-
-</dl>
-
-</div>
-
 * * *
 
 <a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterStatus"></a>
@@ -590,22 +558,6 @@ The printer has an error
 
 The current status of the printer
 
-**See Also**
-
-<div class="list_indent">
-
-<dl>
-
-<dt>
-
-NS_ENUM
-
-</dt>
-
-</dl>
-
-</div>
-
 * * *
 
 <a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterTextAlignment"></a>
@@ -661,22 +613,6 @@ Right alignment
 
 Values to set the alignment of next text sent to the printer.
 
-**See Also**
-
-<div class="list_indent">
-
-<dl>
-
-<dt>
-
-NS_ENUM
-
-</dt>
-
-</dl>
-
-</div>
-
 * * *
 
 <a name="//apple_ref/doc/title:tdef/RMLStarReceiptPrinterTextEmphasis"></a>
@@ -723,22 +659,6 @@ Turns on the emphasis
 ##### <font face="Lucida Grande,Helvetica,Arial">Discussion</font>
 
 Equal to setting the text to bold.
-
-**See Also**
-
-<div class="list_indent">
-
-<dl>
-
-<dt>
-
-NS_ENUM
-
-</dt>
-
-</dl>
-
-</div>
 
 * * *
 
