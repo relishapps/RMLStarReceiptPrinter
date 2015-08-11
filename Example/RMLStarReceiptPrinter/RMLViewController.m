@@ -24,6 +24,11 @@
     
     RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
     
+    if ([printer status] == RMLStarReceiptPrinterStatusOffline) {
+        [printer setTextAlignment:RMLStarReceiptPrinterTextAlignmentCenter];
+        [printer setCharacterExpansion:RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight];
+    }
+    
     [printer sendText:[NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter starIOVersion]]];
     
     self.versionLabel.text = [NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter starIOVersion]];
