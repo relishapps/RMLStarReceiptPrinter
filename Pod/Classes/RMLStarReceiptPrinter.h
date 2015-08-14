@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "RMLStarReceiptPrinterDevice.h"
+
 #import <StarIO/SMPort.h>
 
 /*!
@@ -156,11 +158,27 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){
 + (NSString *)starIOVersion;
 
 /*!
- *  Used to initialize the printer instance (Not used)
+ *  Used to initialize the printer instance with a default device
  *
  *  @return instance type of RMLStarReceiptPrinter
  */
 - (instancetype)init;
+
+/*!
+ *  Used to initialize the printer instance with a specific device
+ *
+ *  @param device An instance of an RMLStarReceiptPrinterDevice object
+ *
+ *  @return instance type of RMLStarReceiptPrinter
+ */
+- (instancetype)initWithDevice:(RMLStarReceiptPrinterDevice*)device;
+
+/*!
+ *  Searches both Bluetooth and LAN networks for available printing devices
+ *
+ *  @return An array of RMLStarReceiptPrinterDevice objects
+ */
++ (NSArray *)availableDevices;
 
 /*!
  *  Returns the current status of the printer (Read-only)

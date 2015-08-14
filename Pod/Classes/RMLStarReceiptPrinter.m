@@ -8,6 +8,8 @@
 
 #import "RMLStarReceiptPrinter.h"
 
+#define defaultPortName @"Star Micronics"
+
 @interface RMLStarReceiptPrinter ()
 
 @property (nonatomic, strong) NSMutableData *buffer;
@@ -22,23 +24,42 @@
 }
 
 - (instancetype)init {
+    self = [self initWithDevice:[RMLStarReceiptPrinterDevice defaultDevice]];
+    
+    if (self) {
+    
+    }
+
+    return self;
+}
+
+- (instancetype)initWithDevice:(RMLStarReceiptPrinterDevice *)device {
     self = [super init];
     
     if (self) {
-        self.port = [SMPort getPort:@"BT:PRNT Star" :@"mini" :10000];
-
+        self.port = [SMPort getPort:device.portName :@"mini" :10000];
+        
         if (self.port == nil || !self.port.connected) {
             return nil;
         }
     }
-
+    
     self.buffer = [NSMutableData new];
-
+    
     return self;
 }
 
 - (void)dealloc {
     [SMPort releasePort:self.port];
+}
+
++ (NSArray *)availableDevices {
+    NSMutableArray *devices = [NSMutableArray new];
+    NSArray *starDevices = [SMPort searchPrinter];
+    for (PortInfo *dev in starDevices) {
+        [devices addObject:[[RMLStarReceiptPrinterDevice alloc] initWithPortName:dev.portName macAddess:dev.macAddress modelName:dev.modelName]];
+    }
+    return devices;
 }
 
 - (RMLStarReceiptPrinterStatus)status {

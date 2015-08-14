@@ -40,7 +40,43 @@ instance type of RMLStarReceiptPrinter
 
 ##### Discussion
 
-Used to initialize the printer instance (Not used)
+Used to initialize the printer instance with a default device
+
+
+### initWithDevice
+```ruby
+- (instancetype)initWithDevice:(RMLStarReceiptPrinterDevice*)device;
+```
+
+##### Parameters
+
+<dl>
+<dt>device</dt>
+<dd>instance of an RMLStarReceiptPrinterDevice object</dd>
+</dl>
+
+##### Return Value
+
+instance type of RMLStarReceiptPrinter
+
+##### Discussion
+
+Used to initialize the printer instance with a specific device
+
+
+
+### availableDevices
+```ruby
++ (NSArray *)availableDevices;
+```
+
+##### Return Value
+
+An array of RMLStarReceiptPrinterDevice objects
+
+##### Discussion
+
+Searches both Bluetooth and LAN networks for available printing devices
 
 
 

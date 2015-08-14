@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395CE5901B7DFE960016496F /* RMLPrinterListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395CE58F1B7DFE960016496F /* RMLPrinterListTableViewController.m */; };
 		512A0097B573FDB6EFC7AFE5 /* Pods_RMLStarReceiptPrinter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E61D0BD968CC95E901CE8B7 /* Pods_RMLStarReceiptPrinter_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -14,7 +15,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* RMLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RMLAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* RMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RMLViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		395CE58E1B7DFE960016496F /* RMLPrinterListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLPrinterListTableViewController.h; sourceTree = "<group>"; };
+		395CE58F1B7DFE960016496F /* RMLPrinterListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLPrinterListTableViewController.m; sourceTree = "<group>"; };
 		5E61D0BD968CC95E901CE8B7 /* Pods_RMLStarReceiptPrinter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* RMLStarReceiptPrinter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMLStarReceiptPrinter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,8 +49,6 @@
 		6003F59B195388D20070C39A /* RMLStarReceiptPrinter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMLStarReceiptPrinter-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* RMLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMLAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* RMLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* RMLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMLViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* RMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* RMLStarReceiptPrinter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMLStarReceiptPrinter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -144,8 +144,8 @@
 				6003F59C195388D20070C39A /* RMLAppDelegate.h */,
 				6003F59D195388D20070C39A /* RMLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* RMLViewController.h */,
-				6003F5A6195388D20070C39A /* RMLViewController.m */,
+				395CE58E1B7DFE960016496F /* RMLPrinterListTableViewController.h */,
+				395CE58F1B7DFE960016496F /* RMLPrinterListTableViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -390,8 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395CE5901B7DFE960016496F /* RMLPrinterListTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RMLAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* RMLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
