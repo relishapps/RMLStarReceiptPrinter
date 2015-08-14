@@ -1,6 +1,0 @@
-framework module RMLStarReceiptPrinter {
-  umbrella header "Pods-RMLStarReceiptPrinter_Example-RMLStarReceiptPrinter-umbrella.h"
-
-  export *
-  module * { export * }
-}

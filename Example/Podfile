@@ -1,12 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
 
-target 'RMLStarReceiptPrinter_Example', :exclusive => true do
-  pod "RMLStarReceiptPrinter", :path => "../"
+target 'RMLStar' do
+  pod 'RMLStar', :path => "../"
 end
 
-target 'RMLStarReceiptPrinter_Tests', :exclusive => true do
-  pod "RMLStarReceiptPrinter", :path => "../"
-
-  
+target 'RMLStarTests' do
+  pod 'RMLStar', :path => "../"
 end
+

@@ -1,8 +1,0 @@
-#import <UIKit/UIKit.h>
-
-#import "RMLStarReceiptPrinter.h"
-#import "RMLStarReceiptPrinterDevice.h"
-
-FOUNDATION_EXPORT double RMLStarReceiptPrinterVersionNumber;
-FOUNDATION_EXPORT const unsigned char RMLStarReceiptPrinterVersionString[];
-

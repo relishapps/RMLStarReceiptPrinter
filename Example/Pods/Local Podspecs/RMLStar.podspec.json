@@ -1,0 +1,30 @@
+{
+  "name": "RMLStar",
+  "version": "0.1.0",
+  "summary": "An iOS wrapper for Star Micronics Receipt Printers.",
+  "description": "                       An iOS wrapper for Star Micronics Receipt Printers.\n\n                       * Works with SM220i printer\n",
+  "homepage": "https://github.com/dansinclair25/RMLStar",
+  "license": "MIT",
+  "authors": {
+    "Dan Sinclair": "dansinclair@me.com"
+  },
+  "source": {
+    "git": "https://github.com/dansinclair25/RMLStar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "RMLStar": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "vendored_frameworks": "Pod/Frameworks/StarIO.framework",
+  "public_header_files": [
+    "Pod/Classes/**/*.h",
+    "Pod/Frameworks/StarIO.framework/Headers/*h"
+  ]
+}
