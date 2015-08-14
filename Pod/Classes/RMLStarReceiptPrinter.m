@@ -24,13 +24,7 @@
 }
 
 - (instancetype)init {
-    self = [self initWithDevice:[RMLStarReceiptPrinterDevice defaultDevice]];
-    
-    if (self) {
-    
-    }
-
-    return self;
+    return [self initWithDevice:[RMLStarReceiptPrinterDevice defaultDevice]];
 }
 
 - (instancetype)initWithDevice:(RMLStarReceiptPrinterDevice *)device {

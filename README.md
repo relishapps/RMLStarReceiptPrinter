@@ -20,14 +20,20 @@ To run the example project, clone the repo, and run pod install from the Example
 
 To use RMLStarReceiptPrinter in your existing project, once you've installed it, add ```#import "RMLStarReceiptPrinter.h"``` to the header file where you want to use it, and initialize it;
 
+Init with default device:
 ```ruby
 RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
+```
+
+Init with specific RMLStarReceiptPrinterDevice:
+```ruby
+RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
 ```
 Use the methods below to then send what you need, to the printer.
 
 
 * * *
-## Methods
+## RMLStarReceiptPrinter Methods
 
 ### init
 ```ruby
@@ -583,6 +589,119 @@ Turns on the emphasis
 Equal to setting the text to bold.
 
 * * *
+## Methods
+
+### defaultDevice
+
++ (RMLStarReceiptPrinterDevice*)defaultDevice;
+
+##### Return Value
+
+instance of RMLStarReceiptPrinterDevice with portName "BT:PRNT Star"
+
+##### Discussion
+
+A class method to return a device with portName "BT:PRNT Star"
+
+
+
+### initWithPortName:macAddess:modelName:
+
+- (instancetype)initWithPortName:(NSString *)portName 
+macAddess:(NSString *)macAddress modelName:(NSString *)modelName;
+
+
+##### Parameters
+
+<dl>
+
+<dt>`portName`</dt>
+
+<dd>
+
+The full 'portName' for the device e.g. "BT:PRNT Star" (required)
+
+</dd>
+
+<dt>`macAddress`</dt>
+
+<dd>
+
+The MAC address (optional)
+
+</dd>
+
+<dt>`modelName`</dt>
+
+<dd>
+
+The model name (optional)
+
+</dd>
+
+</dl>
+
+
+##### Return Value
+
+instance of RMLStarReceiptPrinterDevice
+
+##### Discussion
+
+An init method to set all properties
+
+
+
+## Globals
+
+<dl>
+
+<dt>macAddress</dt>
+
+<dt>modelName</dt>
+
+<dt>portName</dt>
+
+</dl>
+
+
+
+### macAddress
+
+
+@property NSString *macAddress;
+
+
+##### Discussion
+
+The MAC address of the device
+
+
+
+### modelName
+
+
+@property NSString *modelName;
+
+
+##### Discussion
+
+The model name of the device
+
+
+
+### portName
+
+
+@property NSString *portName;
+
+
+##### Discussion
+
+The 'portName' of the device e.g. "BT:PRNT Star"
+* * *
+
+
 
 ## Author
 
