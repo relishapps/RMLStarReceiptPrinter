@@ -9,7 +9,7 @@ Star Receipt Printer. A wrapper for StarIO's iOS SDK
 RMLStarReceiptPrinter is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```smalltalk
+```objective-c
 pod "RMLStarReceiptPrinter"
 ```
 Once it's installed via pod, add the [```StarIO.framework```]() to your project.
@@ -21,12 +21,12 @@ To run the example project, clone the repo, and run pod install from the Example
 To use RMLStarReceiptPrinter in your existing project, once you've installed it, add ```#import "RMLStarReceiptPrinter.h"``` to the header file where you want to use it, and initialize it;
 
 Init with default device:
-```smalltalk
+```objective-c
 RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
 ```
 
 Init with specific RMLStarReceiptPrinterDevice:
-```smalltalk
+```objective-c
 RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
 ```
 Use the methods below to then send what you need, to the printer.
@@ -36,7 +36,7 @@ Use the methods below to then send what you need, to the printer.
 ## RMLStarReceiptPrinter Methods
 
 ### init
-```smalltalk
+```objective-c
 - (instancetype)init;
 ```
 
@@ -50,7 +50,7 @@ Used to initialize the printer instance with a default device
 
 
 ### initWithDevice
-```smalltalk
+```objective-c
 - (instancetype)initWithDevice:(RMLStarReceiptPrinterDevice*)device;
 ```
 
@@ -72,7 +72,7 @@ Used to initialize the printer instance with a specific device
 
 
 ### availableDevices
-```smalltalk
+```objective-c
 + (NSArray *)availableDevices;
 ```
 
@@ -88,7 +88,7 @@ Searches both Bluetooth and LAN networks for available printing devices
 
 ### print
 
-```smalltalk
+```objective-c
 - (BOOL)print;
 ```
 
@@ -104,7 +104,7 @@ The main method used to tell the printer to print the receipt
 
 ### sendSeparator
 
-```smalltalk
+```objective-c
 - (void)sendSeparator;
 ```
 
@@ -116,7 +116,7 @@ Sends a string of 32 hyphens ('-') to the printer, followed by a line break to h
 
 ### sendText:
 
-```smalltalk
+```objective-c
 - (void)sendText:(NSString *)text;
 ```
 
@@ -148,7 +148,7 @@ Format the text before you use this method (i.e. send all emphasis and alignment
 
 ### setCharacterExpansion:
 
-```smalltalk
+```objective-c
 - (void)setCharacterExpansion:(RMLStarReceiptPrinterCharacterExpansion)expansion;
 ```
 
@@ -175,7 +175,7 @@ Used to set the size of the characters you send to the printer
 
 ### setCharacterSet:
 
-```smalltalk
+```objective-c
 - (void)setCharacterSet:(RMLStarReceiptPrinterCharacterSet)characterSet;
 ```
 
@@ -201,7 +201,7 @@ Set the character encoding set
 
 ### setTextAlignment:
 
-```smalltalk
+```objective-c
 - (void)setTextAlignment:(RMLStarReceiptPrinterTextAlignment)alignment;
 ```
 
@@ -227,7 +227,7 @@ Adjust the alignment of the text on the receipt
 
 ### setTextEmphasis:
 
-```smalltalk
+```objective-c
 - (void)setTextEmphasis:(RMLStarReceiptPrinterTextEmphasis)emphasis;
 ```
 
@@ -253,7 +253,7 @@ Using the RMLStarReceiptPrinterTextEmphasis, you can set whether the following t
 
 ### starIOVersion
 
-```smalltalk
+```objective-c
 + (NSString *)starIOVersion;
 ```
 
@@ -269,7 +269,7 @@ Returns the current version of the StarIO framework in use
 
 ### status
 
-```smalltalk
+```objective-c
 - (RMLStarReceiptPrinterStatus)status;
 ```
 
@@ -285,7 +285,7 @@ Returns the current status of the printer (Read-only)
 
 ### RMLStarReceiptPrinterCharacterExpansion
 
-```smalltalk
+```objective-c
 typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterExpansion){  
 RMLStarReceiptPrinterCharacterExpansionNone = 0,  RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight =
 (
@@ -334,7 +334,7 @@ An option for changing the height and/or width of the next charaters sent to the
 
 ### RMLStarReceiptPrinterCharacterSet
 
-```smalltalk
+```objective-c
 typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){  
 RMLStarReceiptPrinterCharacterSetUSA,  RMLStarReceiptPrinterCharacterSetFrance,  
 RMLStarReceiptPrinterCharacterSetGermany,  RMLStarReceiptPrinterCharacterSetUK,  
@@ -447,7 +447,7 @@ Values to set the character set of the next text sent to the printer to.
 
 ### RMLStarReceiptPrinterStatus
 
-```smalltalk
+```objective-c
 typedef NS_ENUM(char, RMLStarReceiptPrinterStatus){  
 RMLStarReceiptPrinterStatusOffline,  RMLStarReceiptPrinterStatusOfflineCoverOpen,  
 RMLStarReceiptPrinterStatusOfflineOutOfPaper,  RMLStarReceiptPrinterStatusOnline,  
@@ -510,7 +510,7 @@ The current status of the printer
 
 ### RMLStarReceiptPrinterTextAlignment
 
-```smalltalk
+```objective-c
 typedef NS_ENUM(char, RMLStarReceiptPrinterTextAlignment){  
 RMLStarReceiptPrinterTextAlignmentLeft = 0,  RMLStarReceiptPrinterTextAlignmentCenter = 
 1,  RMLStarReceiptPrinterTextAlignmentRight = 2 
@@ -555,7 +555,7 @@ Values to set the alignment of next text sent to the printer.
 
 ### RMLStarReceiptPrinterTextEmphasis
 
-```smalltalk
+```objective-c
 typedef NS_ENUM(char, RMLStarReceiptPrinterTextEmphasis){  
 RMLStarReceiptPrinterTextEmphasisOff = 0,  RMLStarReceiptPrinterTextEmphasisOn = 
 1 
@@ -592,7 +592,7 @@ Equal to setting the text to bold.
 ## RMLStarReceiptPrinterDevice Methods
 
 ### defaultDevice
-```smalltalk
+```objective-c
 + (RMLStarReceiptPrinterDevice*)defaultDevice;
 ```
 ##### Return Value
@@ -607,7 +607,7 @@ A class method to return a device with portName "BT:PRNT Star"
 
 ### initWithPortName:macAddess:modelName:
 
-```smalltalk
+```objective-c
 - (instancetype)initWithPortName:(NSString *)portName 
 macAddess:(NSString *)macAddress modelName:(NSString *)modelName;
 ```
