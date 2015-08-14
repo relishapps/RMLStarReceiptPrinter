@@ -616,7 +616,7 @@ macAddess:(NSString *)macAddress modelName:(NSString *)modelName;
 
 <dl>
 
-<dt>`portName`</dt>
+<dt>portName</dt>
 
 <dd>
 
@@ -624,7 +624,7 @@ The full 'portName' for the device e.g. "BT:PRNT Star" (required)
 
 </dd>
 
-<dt>`macAddress`</dt>
+<dt>macAddress</dt>
 
 <dd>
 
@@ -632,7 +632,7 @@ The MAC address (optional)
 
 </dd>
 
-<dt>`modelName`</dt>
+<dt>modelName</dt>
 
 <dd>
 
