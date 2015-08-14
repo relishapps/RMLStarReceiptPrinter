@@ -589,7 +589,7 @@ Turns on the emphasis
 Equal to setting the text to bold.
 
 * * *
-## Methods
+## RMLStarReceiptPrinterDevice Methods
 
 ### defaultDevice
 
@@ -652,7 +652,7 @@ An init method to set all properties
 
 
 
-## Globals
+## RMLStarReceiptPrinterDevice Globals
 
 <dl>
 
