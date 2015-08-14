@@ -669,9 +669,9 @@ An init method to set all properties
 
 ### macAddress
 
-
+```objective-c
 @property NSString *macAddress;
-
+```
 
 ##### Discussion
 
@@ -681,9 +681,9 @@ The MAC address of the device
 
 ### modelName
 
-
+```objective-c
 @property NSString *modelName;
-
+```
 
 ##### Discussion
 
@@ -693,9 +693,9 @@ The model name of the device
 
 ### portName
 
-
+```objective-c
 @property NSString *portName;
-
+```
 
 ##### Discussion
 
