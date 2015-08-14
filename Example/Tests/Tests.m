@@ -2,7 +2,7 @@
 //  RMLStarReceiptPrinterTests.m
 //  RMLStarReceiptPrinterTests
 //
-//  Created by Pawel Decowski on 08/10/2015.
+//  Created by Pawel Decowski on 08/14/2015.
 //  Copyright (c) 2015 Pawel Decowski. All rights reserved.
 //
 
