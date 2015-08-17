@@ -50,6 +50,24 @@
     [self.refreshControl endRefreshing];
 }
 
+- (IBAction)showInfo:(UIBarButtonItem *)sender {
+    NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+    paragraphStyle.alignment = NSTextAlignmentCenter;
+    
+    NSString *about = [NSString stringWithFormat:@"RMLStarReceiptPrinter v%@\n\n(c) 2014–2015 Relish Media Ltd\n\nhttps://relish.io", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"About" message:about preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *web = [UIAlertAction actionWithTitle:@"Visit website" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://relish.io"]];
+    }];
+    [alert addAction:web];
+    
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -100,7 +118,14 @@
 - (void)printWithDevice:(RMLStarReceiptPrinterDevice *)device {
     RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
     
+    [printer setTextAlignment:RMLStarReceiptPrinterTextAlignmentCenter];
+    [printer sendText:[NSString stringWithFormat:@"RMLStarReceiptPrinter v%@\n(c) 2014–2015 Relish Media Ltd\nhttps://relish.io", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+    
+    [printer sendSeparator];
+    
     [printer sendText:[NSString stringWithFormat:@"\n\n\nStarIO v%@\n\n\n\n\n", [RMLStarReceiptPrinter starIOVersion]]];
+    
+    [printer sendSeparator];
     
     [printer print];
 }

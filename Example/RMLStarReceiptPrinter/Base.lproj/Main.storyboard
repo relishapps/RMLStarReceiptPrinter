@@ -39,7 +39,13 @@
                             <outlet property="delegate" destination="L6q-Ph-5yE" id="66F-hv-YN3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RMLStarReceiptPrinter" id="YKR-Zc-vEm"/>
+                    <navigationItem key="navigationItem" title="RMLStarReceiptPrinter" id="YKR-Zc-vEm">
+                        <barButtonItem key="rightBarButtonItem" image="724-info" id="t3m-qZ-j7C">
+                            <connections>
+                                <action selector="showInfo:" destination="L6q-Ph-5yE" id="iuG-Eh-B2Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXS-Sj-nad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,4 +70,8 @@
             <point key="canvasLocation" x="615" y="503"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="724-info" width="28" height="28"/>
+    </resources>
+    <color key="tintColor" red="0.74117647058823533" green="0.082352941176470587" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -9,6 +9,14 @@
 
 Star Receipt Printer. A wrapper for StarIO's iOS SDK
 
++ Works with SM-S220i and similar
++ 2 inch-wide paper
++ Text print
+
+Future improvements:
++ Various widths of paper
++ Image print
+
 ## Installation
 
 RMLStarReceiptPrinter is available through [CocoaPods](http://cocoapods.org). To install
@@ -712,6 +720,7 @@ The 'portName' of the device e.g. "BT:PRNT Star"
 ## Author
 
 Pawel Decowski, pawel.decowski@gmail.com
+Dan Sinclair, dansinclair@me.com
 
 ## License
 
