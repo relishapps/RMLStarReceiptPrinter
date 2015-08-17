@@ -28,7 +28,7 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.backgroundColor = [UIColor purpleColor];
+    self.refreshControl.backgroundColor = [UIColor colorWithRed:189.0/255.0 green:21.0/255.0 blue:80.0/255.0 alpha:1.0];
     self.refreshControl.tintColor = [UIColor whiteColor];
     [self.refreshControl addTarget:self
                             action:@selector(searchForPrinters)
@@ -44,7 +44,7 @@
 
 - (void)searchForPrinters {
     
-    [self.tableView.backgroundView removeFromSuperview];
+    self.tableView.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
     self.printers = [RMLStarReceiptPrinter availableDevices];
     [self.tableView reloadData];
     [self.refreshControl endRefreshing];

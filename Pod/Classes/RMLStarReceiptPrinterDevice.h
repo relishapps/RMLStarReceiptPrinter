@@ -1,10 +1,10 @@
-//
-//  RMLStarReceiptPrinterDevice.h
-//  Pods
-//
-//  Created by Dan Sinclair on 14/08/2015.
-//
-//
+/*!
+ *  @header RMLStarReceiptPrinterDevice.h
+ *  @discussion Star Receipt Printer device.
+ *  @author Dan Sinclair
+ *
+ *  @copyright 2015 Relish Media Ltd. All rights reserved.
+ */
 
 #import <Foundation/Foundation.h>
 
