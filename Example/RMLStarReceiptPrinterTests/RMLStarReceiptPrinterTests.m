@@ -1,19 +1,19 @@
 //
-//  RMLStarTests.m
-//  RMLStarTests
+//  RMLStarReceiptPrinterTests.m
+//  RMLStarReceiptPrinterTests
 //
-//  Created by Dan Sinclair on 14/08/2015.
+//  Created by Dan Sinclair on 17/08/2015.
 //  Copyright (c) 2015 Dan Sinclair. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface RMLStarTests : XCTestCase
+@interface RMLStarReceiptPrinterTests : XCTestCase
 
 @end
 
-@implementation RMLStarTests
+@implementation RMLStarReceiptPrinterTests
 
 - (void)setUp {
     [super setUp];

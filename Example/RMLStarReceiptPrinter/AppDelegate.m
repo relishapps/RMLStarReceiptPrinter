@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  RMLStar
+//  RMLStarReceiptPrinter
 //
-//  Created by Dan Sinclair on 14/08/2015.
+//  Created by Dan Sinclair on 17/08/2015.
 //  Copyright (c) 2015 Dan Sinclair. All rights reserved.
 //
 
