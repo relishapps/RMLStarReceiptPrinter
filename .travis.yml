@@ -11,5 +11,5 @@ language: objective-c
 install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail && xcodebuild test -workspace Example/RMLStarReceiptPrinter.xcworkspace -scheme RMLStarReceiptPrinter -destination OS=8.4,name=iPhone | xcpretty -c
+- set -o pipefail && xcodebuild test -workspace Example/RMLStarReceiptPrinter.xcworkspace -scheme RMLStarReceiptPrinter -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
