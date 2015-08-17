@@ -1,7 +1,6 @@
 FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/../../Pod/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/RMLStar"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/RMLStar"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-RMLStarTests-RMLStar" -framework "StarIO"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter" "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter/StarIO" "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter/StarIO/starmicronics" "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter/StarIO/starmicronics/platform"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter" -isystem "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter/StarIO" -isystem "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter/StarIO/starmicronics" -isystem "${PODS_ROOT}/Headers/Public/RMLStarReceiptPrinter/StarIO/starmicronics/platform"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"RMLStarReceiptPrinter" -framework "StarIO"
 PODS_ROOT = ${SRCROOT}/Pods

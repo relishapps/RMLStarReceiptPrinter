@@ -44,6 +44,7 @@
 
 - (void)searchForPrinters {
     
+    [self.tableView.backgroundView removeFromSuperview];
     self.printers = [RMLStarReceiptPrinter availableDevices];
     [self.tableView reloadData];
     [self.refreshControl endRefreshing];

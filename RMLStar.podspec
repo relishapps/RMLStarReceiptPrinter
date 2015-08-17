@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "RMLStar"
+  s.name             = "RMLStarReceiptPrinter"
   s.version          = "0.1.0"
   s.summary          = "An iOS wrapper for Star Micronics Receipt Printers."
   s.description      = <<-DESC

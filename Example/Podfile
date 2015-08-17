@@ -2,10 +2,10 @@
 # platform :ios, '6.0'
 
 target 'RMLStar' do
-  pod 'RMLStar', :path => "../"
+  pod 'RMLStarReceiptPrinter', :path => "../"
 end
 
 target 'RMLStarTests' do
-  pod 'RMLStar', :path => "../"
+  pod 'RMLStarReceiptPrinter', :path => "../"
 end
 

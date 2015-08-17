@@ -1,8 +1,8 @@
 {
-  "name": "RMLStar",
+  "name": "RMLStarReceiptPrinter",
   "version": "0.1.0",
   "summary": "An iOS wrapper for Star Micronics Receipt Printers.",
-  "description": "                       An iOS wrapper for Star Micronics Receipt Printers.\n\n                       * Works with SM220i printer\n",
+  "description": "An iOS wrapper for Star Micronics Receipt Printers.\n\n* Works with SM220i printer",
   "homepage": "https://github.com/dansinclair25/RMLStar",
   "license": "MIT",
   "authors": {
