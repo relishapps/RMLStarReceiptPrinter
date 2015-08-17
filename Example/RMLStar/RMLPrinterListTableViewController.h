@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "RMLStarReceiptPrinter.h"
 
-@interface RMLPrinterListTableViewController : UITableViewController
+@interface RMLPrinterListTableViewController : UITableViewController <UITableViewDelegate>
 
 @end

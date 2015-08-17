@@ -49,10 +49,13 @@
 
 + (NSArray *)availableDevices {
     NSMutableArray *devices = [NSMutableArray new];
+    
     NSArray *starDevices = [SMPort searchPrinter];
+    
     for (PortInfo *dev in starDevices) {
         [devices addObject:[[RMLStarReceiptPrinterDevice alloc] initWithPortName:dev.portName macAddess:dev.macAddress modelName:dev.modelName]];
     }
+    
     return devices;
 }
 

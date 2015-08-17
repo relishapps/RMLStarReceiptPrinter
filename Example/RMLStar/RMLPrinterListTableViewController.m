@@ -92,16 +92,14 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self printWithDevice:self.printers[indexPath.row]];
-    
 }
 
 - (void)printWithDevice:(RMLStarReceiptPrinterDevice *)device {
     RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
     
-    [printer sendText:[NSString stringWithFormat:@"StarIO v%@", [RMLStarReceiptPrinter starIOVersion]]];
+    [printer sendText:[NSString stringWithFormat:@"\n\n\nStarIO v%@\n\n\n\n\n", [RMLStarReceiptPrinter starIOVersion]]];
     
     [printer print];
 }
