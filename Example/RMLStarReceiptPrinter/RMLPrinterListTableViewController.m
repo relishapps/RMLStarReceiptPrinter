@@ -119,13 +119,8 @@
     RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
     
     [printer setTextAlignment:RMLStarReceiptPrinterTextAlignmentCenter];
-    [printer sendText:[NSString stringWithFormat:@"RMLStarReceiptPrinter v%@\n(c) 2014–2015 Relish Media Ltd\nhttps://relish.io", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
     
-    [printer sendSeparator];
-    
-    [printer sendText:[NSString stringWithFormat:@"\n\n\nStarIO v%@\n\n\n\n\n", [RMLStarReceiptPrinter starIOVersion]]];
-    
-    [printer sendSeparator];
+    [printer sendText:[NSString stringWithFormat:@"\n\nRMLStarReceiptPrinter v%@\n\n(c) 2014-2015 Relish Media Ltd\n\nhttps://relish.io\n\n\n\n\n", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
     
     [printer print];
 }
