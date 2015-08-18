@@ -25,7 +25,6 @@ it, simply add the following line to your Podfile:
 ```objective-c
 pod "RMLStarReceiptPrinter"
 ```
-Once it's installed via pod, add ```#import "RMLStarReceiptPrinter.h``` to your header file where you wish to use it.
 
 ## Usage
 
