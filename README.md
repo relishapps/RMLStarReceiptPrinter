@@ -25,7 +25,6 @@ it, simply add the following line to your Podfile:
 ```objective-c
 pod "RMLStarReceiptPrinter"
 ```
-Once it's installed via pod, add the [```StarIO.framework```]() to your project.
 
 ## Usage
 
@@ -717,10 +716,9 @@ The 'portName' of the device e.g. "BT:PRNT Star"
 
 
 
-## Author
+## Authors
 
-Pawel Decowski, pawel.decowski@gmail.com
-Dan Sinclair, dansinclair@me.com
+Pawel Decowski: pawel.decowski@gmail.com, Dan Sinclair: dansinclair@me.com
 
 ## License
 
