@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Star Receipt Printer. A wrapper for StarIO's iOS SDK
+Star Receipt Printer. A wrapper for StarIO SDK.
 
 + Works with SM-S220i and similar
 + 2 inch-wide paper
@@ -29,6 +29,8 @@ pod "RMLStarReceiptPrinter"
 ## Usage
 
 To run the example project, clone the repo, and run pod install from the Example directory first.
+
+Open your ```Info.plist``` file and add the key ```UISupportedExternalAccessoryProtocols``` with a string value of ```jp.star-m.starpro```.
 
 To use RMLStarReceiptPrinter in your existing project, once you've installed it, add ```#import "RMLStarReceiptPrinter.h"``` to the header file where you want to use it, and initialize it;
 
@@ -718,7 +720,7 @@ The 'portName' of the device e.g. "BT:PRNT Star"
 
 ## Authors
 
-Pawel Decowski: pawel.decowski@gmail.com, Dan Sinclair: dansinclair@me.com
+Pawel Decowski: pawel@relish.io, Dan Sinclair: dan@relish.io
 
 ## License
 
