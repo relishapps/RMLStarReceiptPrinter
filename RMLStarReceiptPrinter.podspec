@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/relishmedia/RMLStarReceiptPrinter"
   s.license          = 'MIT'
-  s.author           = { "Pawel Decowski" => "pawel.decowski@gmail.com" }
+  s.author           = { "Pawel Decowski" => "pawel@relish.io" }
   s.source           = { :git => "https://github.com/relishmedia/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/relishmedia'
 
