@@ -716,7 +716,7 @@ The 'portName' of the device e.g. "BT:PRNT Star"
 
 
 
-## Author
+## Authors
 
 Pawel Decowski: pawel.decowski@gmail.com, Dan Sinclair: dansinclair@me.com
 
