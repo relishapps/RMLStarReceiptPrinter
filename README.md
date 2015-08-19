@@ -7,46 +7,63 @@
 
 ## Introduction
 
-Star Receipt Printer. A wrapper for StarIO SDK.
+A wrapper for StarIO SDK that makes printing receipts a breeze.
 
-+ Works with SM-S220i and similar
-+ 2 inch-wide paper
-+ Text print
+## Features
 
-Future improvements:
-+ Various widths of paper
-+ Image print
+- Works with SM-S220i and similar
+- Support for 2 inch-wide paper
+- Text print with styling: emphasis, alignment, character expansion, various character sets
 
 ## Installation
 
-RMLStarReceiptPrinter is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+RMLStarReceiptPrinter is available through [CocoaPods](http://cocoapods.org). To install it:
 
-```objective-c
-pod "RMLStarReceiptPrinter"
-```
+1. Add the following line to your Podfile:
+
+    ```objective-c
+    pod "RMLStarReceiptPrinter"
+    ```
+
+2. Run `pod install`.
+3. Open your `Info.plist` file and add the `jp.star-m.starpro` to `Supported external accessory protocols`.
+
+To run the example project, clone the repo, and run `pod install` from the `Example` directory.
 
 ## Usage
 
-To run the example project, clone the repo, and run pod install from the Example directory first.
+To use RMLStarReceiptPrinter in your existing project, once you've installed it, add `#import "RMLStarReceiptPrinter.h"` to the header file where you want to use it, and initialise it.
 
-Open your ```Info.plist``` file and add the key ```UISupportedExternalAccessoryProtocols``` with a string value of ```jp.star-m.starpro```.
+Initialise with default device (factory name):
 
-To use RMLStarReceiptPrinter in your existing project, once you've installed it, add ```#import "RMLStarReceiptPrinter.h"``` to the header file where you want to use it, and initialize it;
-
-Init with default device:
 ```objective-c
 RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
 ```
 
 Init with specific RMLStarReceiptPrinterDevice:
+
 ```objective-c
 RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
 ```
-Use the methods below to then send what you need, to the printer.
 
+An `NSArray` of available devices can be fetched by:
 
-* * *
+```objective-c
+NSArray *devices = [RMLStarReceiptPrinter availableDevices];
+```
+
+To send text to the print buffer:
+
+```objective-c
+[printer sendText:@"Hello, world!"];
+```
+
+And to send the buffer to the printer:
+
+```objective-c
+[printer print];
+```
+
 ## RMLStarReceiptPrinter Methods
 
 ### init
@@ -56,12 +73,11 @@ Use the methods below to then send what you need, to the printer.
 
 ##### Return Value
 
-instance type of RMLStarReceiptPrinter
+An instance of RMLStarReceiptPrinter.
 
-##### Discussion
+##### Description
 
-Used to initialize the printer instance with a default device
-
+Used to initialize the printer instance with a default device (one with factory name).
 
 ### initWithDevice
 ```objective-c
@@ -79,7 +95,7 @@ Used to initialize the printer instance with a default device
 
 instance type of RMLStarReceiptPrinter
 
-##### Discussion
+##### Description
 
 Used to initialize the printer instance with a specific device
 
@@ -94,7 +110,7 @@ Used to initialize the printer instance with a specific device
 
 An array of RMLStarReceiptPrinterDevice objects
 
-##### Discussion
+##### Description
 
 Searches both Bluetooth and LAN networks for available printing devices
 
@@ -110,7 +126,7 @@ Searches both Bluetooth and LAN networks for available printing devices
 
 a bool value based on the success of the pritner printing the receipt
 
-##### Discussion
+##### Description
 
 The main method used to tell the printer to print the receipt
 
@@ -122,7 +138,7 @@ The main method used to tell the printer to print the receipt
 - (void)sendSeparator;
 ```
 
-##### Discussion
+##### Description
 
 Sends a string of 32 hyphens ('-') to the printer, followed by a line break to help separate items on the receipt.
 
@@ -150,7 +166,7 @@ an NSString for the printer to print
 </dl>
 
 
-##### Discussion
+##### Description
 
 Used to send a single line of text to the printer to print.
 
@@ -181,7 +197,7 @@ one of the RMLStarReceiptPrinterCharacterExpansion options
 </dl>
 
 
-##### Discussion
+##### Description
 
 Used to set the size of the characters you send to the printer
 
@@ -207,7 +223,7 @@ RMLStarReceiptPrinterCharacterSet on the character set you want
 
 </dl>
 
-##### Discussion
+##### Description
 
 Set the character encoding set
 
@@ -233,7 +249,7 @@ The alignment that you want to set (as RMLStarReceiptPrinterTextAlignment)
 
 </dl>
 
-##### Discussion
+##### Description
 
 Adjust the alignment of the text on the receipt
 
@@ -259,7 +275,7 @@ RMLStarReceiptPrinterTextEmphasisIsOff, RMLStarReceiptPrinterTextEmphasisIsOn
 
 </dl>
 
-##### Discussion
+##### Description
 
 Using the RMLStarReceiptPrinterTextEmphasis, you can set whether the following test is emphasised or not
 
@@ -275,7 +291,7 @@ Using the RMLStarReceiptPrinterTextEmphasis, you can set whether the following t
 
 an NSString value of the StarIO framework version number
 
-##### Discussion
+##### Description
 
 Returns the current version of the StarIO framework in use
 
@@ -291,7 +307,7 @@ Returns the current version of the StarIO framework in use
 
 The printer's current status (as RMLStarReceiptPrinterStatus)
 
-##### Discussion
+##### Description
 
 Returns the current status of the printer (Read-only)
 
@@ -339,7 +355,7 @@ Makes characters double height and width
 
 </dl>
 
-##### Discussion
+##### Description
 
 An option for changing the height and/or width of the next charaters sent to the printer
 
@@ -453,7 +469,7 @@ Denmark 2 character set
 
 </dl>
 
-##### Discussion
+##### Description
 
 Values to set the character set of the next text sent to the printer to.
 
@@ -516,7 +532,7 @@ The printer has an error
 </dl>
 
 
-##### Discussion
+##### Description
 
 The current status of the printer
 
@@ -561,7 +577,7 @@ Right alignment
 
 </dl>
 
-##### Discussion
+##### Description
 
 Values to set the alignment of next text sent to the printer.
 
@@ -598,7 +614,7 @@ Turns on the emphasis
 
 </dl>
 
-##### Discussion
+##### Description
 
 Equal to setting the text to bold.
 
@@ -613,7 +629,7 @@ Equal to setting the text to bold.
 
 instance of RMLStarReceiptPrinterDevice with portName "BT:PRNT Star"
 
-##### Discussion
+##### Description
 
 A class method to return a device with portName "BT:PRNT Star"
 
@@ -661,25 +677,13 @@ The model name (optional)
 
 instance of RMLStarReceiptPrinterDevice
 
-##### Discussion
+##### Description
 
 An init method to set all properties
 
 
 
-## RMLStarReceiptPrinterDevice Globals
-
-<dl>
-
-<dt>macAddress</dt>
-
-<dt>modelName</dt>
-
-<dt>portName</dt>
-
-</dl>
-
-
+## RMLStarReceiptPrinterDevice properties
 
 ### macAddress
 
@@ -687,7 +691,7 @@ An init method to set all properties
 @property NSString *macAddress;
 ```
 
-##### Discussion
+##### Description
 
 The MAC address of the device
 
@@ -699,11 +703,9 @@ The MAC address of the device
 @property NSString *modelName;
 ```
 
-##### Discussion
+##### Description
 
 The model name of the device
-
-
 
 ### portName
 
@@ -711,16 +713,20 @@ The model name of the device
 @property NSString *portName;
 ```
 
-##### Discussion
+##### Description
 
 The 'portName' of the device e.g. "BT:PRNT Star"
 * * *
 
+## Planned improvements
 
+- Various widths of paper
+- Image printing
 
 ## Authors
 
-Pawel Decowski: pawel@relish.io, Dan Sinclair: dan@relish.io
+- Pawel Decowski: pawel@relish.io
+- Dan Sinclair: dan@relish.io
 
 ## License
 
