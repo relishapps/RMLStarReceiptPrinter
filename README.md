@@ -43,7 +43,7 @@ RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter new];
 Init with specific RMLStarReceiptPrinterDevice:
 
 ```objective-c
-RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
+RMLStarReceiptPrinter *printer = [RMLStarReceiptPrinter printerWithDevice:device];
 ```
 
 An `NSArray` of available devices can be fetched by:
