@@ -14,8 +14,8 @@
 		390277E11B8221A900CECB37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390277DF1B8221A900CECB37 /* LaunchScreen.xib */; };
 		390277ED1B8221AA00CECB37 /* RMLStarReceiptPrinterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390277EC1B8221A900CECB37 /* RMLStarReceiptPrinterTests.m */; };
 		390277F81B82231700CECB37 /* RMLPrinterListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390277F71B82231700CECB37 /* RMLPrinterListTableViewController.m */; };
-		50A3B04D92ECAE9368B10A21 /* libPods-RMLStarReceiptPrinterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C14B1C34AE1930A9704640FE /* libPods-RMLStarReceiptPrinterTests.a */; };
-		E8A9970EB8361190F109FCEE /* libPods-RMLStarReceiptPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0661E8A6D99448C28D77B8 /* libPods-RMLStarReceiptPrinter.a */; };
+		77D26ADA78E5F71D58DBC312 /* Pods_RMLStarReceiptPrinterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAFBE55DD5C139613F63744 /* Pods_RMLStarReceiptPrinterTests.framework */; };
+		7A3965DB3F6CE977DB33A8D3 /* Pods_RMLStarReceiptPrinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D283E3ECB59B2AD77A0490 /* Pods_RMLStarReceiptPrinter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13B7519E3DD86F2FF5CFB1BD /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests.release.xcconfig"; sourceTree = "<group>"; };
-		1486802C28C35AABD6A08038 /* Pods-RMLStarReceiptPrinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter.release.xcconfig"; sourceTree = "<group>"; };
+		25148FC585E1163601AFAF19 /* Pods-RMLStarReceiptPrinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter.debug.xcconfig"; sourceTree = "<group>"; };
 		390277CD1B8221A900CECB37 /* RMLStarReceiptPrinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMLStarReceiptPrinter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		390277D11B8221A900CECB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390277D21B8221A900CECB37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,10 +43,11 @@
 		390277EC1B8221A900CECB37 /* RMLStarReceiptPrinterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLStarReceiptPrinterTests.m; sourceTree = "<group>"; };
 		390277F61B82231700CECB37 /* RMLPrinterListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLPrinterListTableViewController.h; sourceTree = "<group>"; };
 		390277F71B82231700CECB37 /* RMLPrinterListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLPrinterListTableViewController.m; sourceTree = "<group>"; };
-		7E0661E8A6D99448C28D77B8 /* libPods-RMLStarReceiptPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMLStarReceiptPrinter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EC6A6A5475C85CC4D729AD6 /* Pods-RMLStarReceiptPrinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter.debug.xcconfig"; sourceTree = "<group>"; };
-		C14B1C34AE1930A9704640FE /* libPods-RMLStarReceiptPrinterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMLStarReceiptPrinterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C644D8503D576C248AFFFEF6 /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A313431ECA8CB350330CA50 /* Pods-RMLStarReceiptPrinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter.release.xcconfig"; sourceTree = "<group>"; };
+		9558BEC2C4B9D56CEAC7B26F /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A63AE2F256EDFA0A0B2E4BEB /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5D283E3ECB59B2AD77A0490 /* Pods_RMLStarReceiptPrinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAFBE55DD5C139613F63744 /* Pods_RMLStarReceiptPrinterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A9970EB8361190F109FCEE /* libPods-RMLStarReceiptPrinter.a in Frameworks */,
+				7A3965DB3F6CE977DB33A8D3 /* Pods_RMLStarReceiptPrinter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A3B04D92ECAE9368B10A21 /* libPods-RMLStarReceiptPrinterTests.a in Frameworks */,
+				77D26ADA78E5F71D58DBC312 /* Pods_RMLStarReceiptPrinterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +76,8 @@
 				390277CF1B8221A900CECB37 /* RMLStarReceiptPrinter */,
 				390277E91B8221A900CECB37 /* RMLStarReceiptPrinterTests */,
 				390277CE1B8221A900CECB37 /* Products */,
-				D1E512DB4545AD3809DE0AE4 /* Pods */,
-				5649B86DF6496E09F401428E /* Frameworks */,
+				FCD9BBF84E001AA566871A88 /* Pods */,
+				40C05DB9D620366E53B41D94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,22 +131,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5649B86DF6496E09F401428E /* Frameworks */ = {
+		40C05DB9D620366E53B41D94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E0661E8A6D99448C28D77B8 /* libPods-RMLStarReceiptPrinter.a */,
-				C14B1C34AE1930A9704640FE /* libPods-RMLStarReceiptPrinterTests.a */,
+				D5D283E3ECB59B2AD77A0490 /* Pods_RMLStarReceiptPrinter.framework */,
+				DFAFBE55DD5C139613F63744 /* Pods_RMLStarReceiptPrinterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D1E512DB4545AD3809DE0AE4 /* Pods */ = {
+		FCD9BBF84E001AA566871A88 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8EC6A6A5475C85CC4D729AD6 /* Pods-RMLStarReceiptPrinter.debug.xcconfig */,
-				1486802C28C35AABD6A08038 /* Pods-RMLStarReceiptPrinter.release.xcconfig */,
-				C644D8503D576C248AFFFEF6 /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */,
-				13B7519E3DD86F2FF5CFB1BD /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */,
+				25148FC585E1163601AFAF19 /* Pods-RMLStarReceiptPrinter.debug.xcconfig */,
+				6A313431ECA8CB350330CA50 /* Pods-RMLStarReceiptPrinter.release.xcconfig */,
+				9558BEC2C4B9D56CEAC7B26F /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */,
+				A63AE2F256EDFA0A0B2E4BEB /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -158,11 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390277F01B8221AA00CECB37 /* Build configuration list for PBXNativeTarget "RMLStarReceiptPrinter" */;
 			buildPhases = (
-				D9F6FC7BC068A204D1D4F01B /* Check Pods Manifest.lock */,
+				E14A586665DEB34E4401224A /* [CP] Check Pods Manifest.lock */,
 				390277C91B8221A900CECB37 /* Sources */,
 				390277CA1B8221A900CECB37 /* Frameworks */,
 				390277CB1B8221A900CECB37 /* Resources */,
-				9EBE6F2C79D669299AED405A /* Copy Pods Resources */,
+				3F1AE04E23DD5195B43A751F /* [CP] Embed Pods Frameworks */,
+				53D9204E7F57F81FF54DEA7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,11 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390277F31B8221AA00CECB37 /* Build configuration list for PBXNativeTarget "RMLStarReceiptPrinterTests" */;
 			buildPhases = (
-				A7BE32EB92D9DACE4AAD617B /* Check Pods Manifest.lock */,
+				6D5F6BCA46EF72349FF49B5C /* [CP] Check Pods Manifest.lock */,
 				390277E21B8221A900CECB37 /* Sources */,
 				390277E31B8221A900CECB37 /* Frameworks */,
 				390277E41B8221A900CECB37 /* Resources */,
-				17D900255555A31E50FF3409 /* Copy Pods Resources */,
+				7FC2AAB05D3FBBAFEED4FB22 /* [CP] Embed Pods Frameworks */,
+				2F754412C82CBADA486B07B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,14 +255,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17D900255555A31E50FF3409 /* Copy Pods Resources */ = {
+		2F754412C82CBADA486B07B6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,14 +270,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9EBE6F2C79D669299AED405A /* Copy Pods Resources */ = {
+		3F1AE04E23DD5195B43A751F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53D9204E7F57F81FF54DEA7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,34 +300,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A7BE32EB92D9DACE4AAD617B /* Check Pods Manifest.lock */ = {
+		6D5F6BCA46EF72349FF49B5C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D9F6FC7BC068A204D1D4F01B /* Check Pods Manifest.lock */ = {
+		7FC2AAB05D3FBBAFEED4FB22 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14A586665DEB34E4401224A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -448,7 +480,7 @@
 		};
 		390277F11B8221AA00CECB37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EC6A6A5475C85CC4D729AD6 /* Pods-RMLStarReceiptPrinter.debug.xcconfig */;
+			baseConfigurationReference = 25148FC585E1163601AFAF19 /* Pods-RMLStarReceiptPrinter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -460,7 +492,7 @@
 		};
 		390277F21B8221AA00CECB37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1486802C28C35AABD6A08038 /* Pods-RMLStarReceiptPrinter.release.xcconfig */;
+			baseConfigurationReference = 6A313431ECA8CB350330CA50 /* Pods-RMLStarReceiptPrinter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -472,7 +504,7 @@
 		};
 		390277F41B8221AA00CECB37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C644D8503D576C248AFFFEF6 /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */;
+			baseConfigurationReference = 9558BEC2C4B9D56CEAC7B26F /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -492,7 +524,7 @@
 		};
 		390277F51B8221AA00CECB37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13B7519E3DD86F2FF5CFB1BD /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */;
+			baseConfigurationReference = A63AE2F256EDFA0A0B2E4BEB /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
