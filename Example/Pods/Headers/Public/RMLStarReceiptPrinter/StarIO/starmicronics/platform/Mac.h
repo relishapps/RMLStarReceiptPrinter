@@ -1,1 +1,0 @@
-../../../../../../../../Pod/Frameworks/StarIO.framework/Headers/starmicronics/platform/Mac.h

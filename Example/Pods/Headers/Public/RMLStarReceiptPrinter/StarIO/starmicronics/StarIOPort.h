@@ -1,1 +1,0 @@
-../../../../../../../Pod/Frameworks/StarIO.framework/Headers/starmicronics/StarIOPort.h
