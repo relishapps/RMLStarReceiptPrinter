@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RMLStarReceiptPrinter"
-  s.version          = "1.1.0"
+  s.version          = "1.1.3"
   s.summary          = "Wrapper for StarIO SDK"
   s.description      = <<-DESC
                        RMLStarReceiptPrinter makes printing receipts a breeze!
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.frameworks = 'CoreBluetooth'
-  s.vendored_frameworks = 'Pod/Frameworks/StarIO.framework', 'Pod/Frameworks/StarIO.framework'
+  s.vendored_frameworks = 'Pod/Frameworks/StarIO.framework', 'Pod/Frameworks/StarIO_Extension.framework'
 
   s.public_header_files = 'Pod/Classes/*.h'
 end
