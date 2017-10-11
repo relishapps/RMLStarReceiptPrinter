@@ -116,7 +116,11 @@
 }
 
 - (void)printWithDevice:(RMLStarReceiptPrinterDevice *)device {
+    NSLog(@"StarIO SDK version: %@", [RMLStarReceiptPrinter starIOVersion]);
+    NSLog(@"Device: %@", device.portName);
     RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
+    
+    NSLog(@"Printer: %@", printer);
     
     [printer setTextAlignment:RMLStarReceiptPrinterTextAlignmentCenter];
     

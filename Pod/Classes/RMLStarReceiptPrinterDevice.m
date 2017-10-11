@@ -12,7 +12,7 @@
 
 @implementation RMLStarReceiptPrinterDevice
 
-- (instancetype)initWithPortName:(NSString *)portName macAddess:(NSString *)macAddress modelName:(NSString *)modelName {
+- (instancetype)initWithPortName:(NSString *)portName macAddress:(NSString *)macAddress modelName:(NSString *)modelName {
     self = [super init];
     
     if (self) {
@@ -25,7 +25,7 @@
 }
 
 + (RMLStarReceiptPrinterDevice *)defaultDevice {
-    return [[self alloc] initWithPortName:defaultPortName macAddess:nil modelName:nil];
+    return [[self alloc] initWithPortName:defaultPortName macAddress:nil modelName:nil];
 }
 
 @end

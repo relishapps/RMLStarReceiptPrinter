@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2224B7D7BC4D785B9B740753 /* libPods-RMLStarReceiptPrinterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAA781CA29D42F5552700C5 /* libPods-RMLStarReceiptPrinterTests.a */; };
 		390277D31B8221A900CECB37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 390277D21B8221A900CECB37 /* main.m */; };
 		390277D61B8221A900CECB37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 390277D51B8221A900CECB37 /* AppDelegate.m */; };
 		390277DC1B8221A900CECB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390277DA1B8221A900CECB37 /* Main.storyboard */; };
@@ -14,8 +15,7 @@
 		390277E11B8221A900CECB37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390277DF1B8221A900CECB37 /* LaunchScreen.xib */; };
 		390277ED1B8221AA00CECB37 /* RMLStarReceiptPrinterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390277EC1B8221A900CECB37 /* RMLStarReceiptPrinterTests.m */; };
 		390277F81B82231700CECB37 /* RMLPrinterListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390277F71B82231700CECB37 /* RMLPrinterListTableViewController.m */; };
-		77D26ADA78E5F71D58DBC312 /* Pods_RMLStarReceiptPrinterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAFBE55DD5C139613F63744 /* Pods_RMLStarReceiptPrinterTests.framework */; };
-		7A3965DB3F6CE977DB33A8D3 /* Pods_RMLStarReceiptPrinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D283E3ECB59B2AD77A0490 /* Pods_RMLStarReceiptPrinter.framework */; };
+		7204B1F2EA27197506D893EC /* libPods-RMLStarReceiptPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DA6F7A5282FE8BEF9B92B6 /* libPods-RMLStarReceiptPrinter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		390277F61B82231700CECB37 /* RMLPrinterListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLPrinterListTableViewController.h; sourceTree = "<group>"; };
 		390277F71B82231700CECB37 /* RMLPrinterListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLPrinterListTableViewController.m; sourceTree = "<group>"; };
 		6A313431ECA8CB350330CA50 /* Pods-RMLStarReceiptPrinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinter/Pods-RMLStarReceiptPrinter.release.xcconfig"; sourceTree = "<group>"; };
+		7EAA781CA29D42F5552700C5 /* libPods-RMLStarReceiptPrinterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMLStarReceiptPrinterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9558BEC2C4B9D56CEAC7B26F /* Pods-RMLStarReceiptPrinterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A63AE2F256EDFA0A0B2E4BEB /* Pods-RMLStarReceiptPrinterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMLStarReceiptPrinterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMLStarReceiptPrinterTests/Pods-RMLStarReceiptPrinterTests.release.xcconfig"; sourceTree = "<group>"; };
-		D5D283E3ECB59B2AD77A0490 /* Pods_RMLStarReceiptPrinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFAFBE55DD5C139613F63744 /* Pods_RMLStarReceiptPrinterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMLStarReceiptPrinterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DA6F7A5282FE8BEF9B92B6 /* libPods-RMLStarReceiptPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMLStarReceiptPrinter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A3965DB3F6CE977DB33A8D3 /* Pods_RMLStarReceiptPrinter.framework in Frameworks */,
+				7204B1F2EA27197506D893EC /* libPods-RMLStarReceiptPrinter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D26ADA78E5F71D58DBC312 /* Pods_RMLStarReceiptPrinterTests.framework in Frameworks */,
+				2224B7D7BC4D785B9B740753 /* libPods-RMLStarReceiptPrinterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +134,8 @@
 		40C05DB9D620366E53B41D94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5D283E3ECB59B2AD77A0490 /* Pods_RMLStarReceiptPrinter.framework */,
-				DFAFBE55DD5C139613F63744 /* Pods_RMLStarReceiptPrinterTests.framework */,
+				E0DA6F7A5282FE8BEF9B92B6 /* libPods-RMLStarReceiptPrinter.a */,
+				7EAA781CA29D42F5552700C5 /* libPods-RMLStarReceiptPrinterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

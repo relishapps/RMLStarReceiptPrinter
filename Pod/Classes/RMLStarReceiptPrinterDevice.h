@@ -34,7 +34,7 @@
  *
  *  @return instance of RMLStarReceiptPrinterDevice
  */
-- (instancetype)initWithPortName:(NSString *)portName macAddess:(NSString *)macAddress modelName:(NSString *)modelName;
+- (instancetype)initWithPortName:(NSString *)portName macAddress:(NSString *)macAddress modelName:(NSString *)modelName;
 
 /*!
  *  A class method to return a device with portName "BT:PRNT Star"

@@ -31,7 +31,7 @@
     self = [super init];
     
     if (self) {
-        self.port = [SMPort getPort:device.portName :@"mini" :10000];
+        self.port = [SMPort getPort:device.portName :@"Portable" :10000];
         
         if (self.port == nil || !self.port.connected) {
             return nil;
@@ -53,7 +53,7 @@
     NSArray *starDevices = [SMPort searchPrinter];
     
     for (PortInfo *dev in starDevices) {
-        [devices addObject:[[RMLStarReceiptPrinterDevice alloc] initWithPortName:dev.portName macAddess:dev.macAddress modelName:dev.modelName]];
+        [devices addObject:[[RMLStarReceiptPrinterDevice alloc] initWithPortName:dev.portName macAddress:dev.macAddress modelName:dev.modelName]];
     }
     
     return devices;
