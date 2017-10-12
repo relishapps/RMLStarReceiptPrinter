@@ -11,6 +11,8 @@
 #import "RMLStarReceiptPrinterDevice.h"
 
 #import <StarIO/SMPort.h>
+#import <StarIO_Extension/StarIoExt.h>
+#import <StarIO_Extension/StarIoExtManager.h>
 
 /*!
  *  @typedef RMLStarReceiptPrinterStatus
@@ -194,8 +196,6 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){
  */
 - (void)setCharacterSet:(RMLStarReceiptPrinterCharacterSet)characterSet;
 
-- (void)setPageAreaWithLength:(char)l andHeight:(char) h;
-
 /*!
  *  Using the RMLStarReceiptPrinterTextEmphasis, you can set whether the following test is emphasised or not
  *
@@ -225,6 +225,14 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){
  *  @param text an NSString for the printer to print
  */
 - (void)sendText:(NSString *)text;
+
+/*!
+ */
+- (void)sendTextAlignedLeft:(NSString *)textLeft alignedRight:(NSString *)textRight;
+
+/*!
+ */
+- (void)sendTextAlignedLeft:(NSString *)textLeft alignedRightDoubleWidthDoubleHeight:(NSString *)textRight;
 
 /*!
  *  Sends a string of 32 hyphens ('-') to the printer, followed by a line break to help separate items on the receipt.

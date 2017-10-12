@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RMLStarReceiptPrinterDevice : NSObject
+@interface RMLStarReceiptPrinterDevice : NSObject <NSCoding>
 
 /*!
  *  The 'portName' of the device e.g. "BT:PRNT Star"
@@ -43,4 +43,7 @@
  */
 + (RMLStarReceiptPrinterDevice*)defaultDevice;
 
+- (id)initWithCoder:(NSCoder *)coder;
+
+- (void)encodeWithCoder:(NSCoder *)coder;
 @end

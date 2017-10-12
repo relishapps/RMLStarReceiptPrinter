@@ -8,12 +8,12 @@
 
 #import "RMLStarReceiptPrinter.h"
 
-#define defaultPortName @"Star Micronics"
-
 @interface RMLStarReceiptPrinter ()
 
 @property (nonatomic, strong) NSMutableData *buffer;
+@property (nonatomic, strong) ISCBBuilder *builder;
 @property (nonatomic, strong) SMPort *port;
+@property char paperWidthInCharacters;
 
 @end
 
@@ -31,14 +31,29 @@
     self = [super init];
     
     if (self) {
-        self.port = [SMPort getPort:device.portName :@"Portable" :10000];
+        NSString *settings;
+        StarIoExtEmulation emulation;
+        
+        if ([device.modelName isEqualToString:@"SM-S220"]) {
+            NSLog(@"Printer emulation: EscPos");
+            emulation = StarIoExtEmulationEscPos;
+            settings = @"mini";
+        } else {
+            NSLog(@"Printer emulation: StarPRNT");
+            emulation = StarIoExtEmulationStarPRNT;
+            settings = @"Portable";
+        }
+
+        self.port = [SMPort getPort:device.portName :settings :10000];
         
         if (self.port == nil || !self.port.connected) {
             return nil;
         }
+        
+        self.buffer = [NSMutableData new];
+        self.builder = [StarIoExt createCommandBuilder:emulation];
+        self.paperWidthInCharacters = 32;
     }
-    
-    self.buffer = [NSMutableData new];
     
     return self;
 }
@@ -60,75 +75,155 @@
 }
 
 - (RMLStarReceiptPrinterStatus)status {
-    if (!self.port.connected) {
+    RMLStarReceiptPrinterStatus rmlStatus;
+    
+    if (self.port == nil || !self.port.connected) {
+        NSLog(@"Printer status: Not connected");
         return RMLStarReceiptPrinterStatusOffline;
     }
     
     StarPrinterStatus_2 status;
-    
+
     @try {
         [self.port getParsedStatus:&status :2];
-        
+
         if (status.offline == SM_TRUE)
         {
             if (status.coverOpen == SM_TRUE)
             {
-                return RMLStarReceiptPrinterStatusOfflineCoverOpen;
+                NSLog(@"Cover open");
+                rmlStatus = RMLStarReceiptPrinterStatusOfflineCoverOpen;
             }
             else if (status.receiptPaperEmpty == SM_TRUE)
             {
-                return RMLStarReceiptPrinterStatusOfflineOutOfPaper;
+                NSLog(@"No paper");
+                rmlStatus = RMLStarReceiptPrinterStatusOfflineOutOfPaper;
             }
             else
             {
-                return RMLStarReceiptPrinterStatusOffline;
+                NSLog(@"Printer status: Offline");
+                rmlStatus = RMLStarReceiptPrinterStatusOffline;
             }
+        } else {
+            NSLog(@"Online");
+            rmlStatus = RMLStarReceiptPrinterStatusOnline;
         }
     }
     @catch (PortException *exception) {
         NSLog(@"%@", exception);
-        return RMLStarReceiptPrinterStatusError;
+        rmlStatus = RMLStarReceiptPrinterStatusError;
     }
-
-    return RMLStarReceiptPrinterStatusOnline;
+    
+    return rmlStatus;
 }
 
 - (void)setCharacterSet:(RMLStarReceiptPrinterCharacterSet)characterSet {
-    char command[] = {0x1b, 0x52, characterSet};
-    
-    [self.buffer appendBytes:command length:sizeof(command)];
-}
-
-- (void)setPageAreaWithLength:(char)l andHeight:(char) h {
-    char command[] = {0x1d, 0x57, l, h};
-    
-    [self.buffer appendBytes:command length:sizeof(command)];
+    switch(characterSet) {
+        case RMLStarReceiptPrinterCharacterSetUK:
+            [self.builder appendInternational:SCBInternationalTypeUK];
+            break;
+        case RMLStarReceiptPrinterCharacterSetUSA:
+            [self.builder appendInternational:SCBInternationalTypeUSA];
+            break;
+        case RMLStarReceiptPrinterCharacterSetItaly:
+            [self.builder appendInternational:SCBInternationalTypeItaly];
+            break;
+        case RMLStarReceiptPrinterCharacterSetJapan:
+            [self.builder appendInternational:SCBInternationalTypeJapan];
+            break;
+        case RMLStarReceiptPrinterCharacterSetSpain:
+            [self.builder appendInternational:SCBInternationalTypeSpain];
+            break;
+        case RMLStarReceiptPrinterCharacterSetFrance:
+            [self.builder appendInternational:SCBInternationalTypeFrance];
+            break;
+        case RMLStarReceiptPrinterCharacterSetNorway:
+            [self.builder appendInternational:SCBInternationalTypeNorway];
+            break;
+        case RMLStarReceiptPrinterCharacterSetSweden:
+            [self.builder appendInternational:SCBInternationalTypeSweden];
+            break;
+        case RMLStarReceiptPrinterCharacterSetDenmark:
+            [self.builder appendInternational:SCBInternationalTypeDenmark];
+            break;
+        case RMLStarReceiptPrinterCharacterSetDenmark2:
+            [self.builder appendInternational:SCBInternationalTypeDenmark2];
+            break;
+        case RMLStarReceiptPrinterCharacterSetGermany:
+            [self.builder appendInternational:SCBInternationalTypeGermany];
+            break;
+    }
 }
 
 - (void)setTextAlignment:(RMLStarReceiptPrinterTextAlignment)alignment {
-    char command[] = {0x1b, 0x61, alignment};
-    
-    [self.buffer appendBytes:command length:sizeof(command)];
+    switch(alignment) {
+        case RMLStarReceiptPrinterTextAlignmentLeft:
+            [self.builder appendAlignment:SCBAlignmentPositionLeft];
+            break;
+        case RMLStarReceiptPrinterTextAlignmentRight:
+            [self.builder appendAlignment:SCBAlignmentPositionRight];
+            break;
+        case RMLStarReceiptPrinterTextAlignmentCenter:
+            [self.builder appendAlignment:SCBAlignmentPositionCenter];
+            break;
+    }
 }
 
 - (void)setCharacterExpansion:(RMLStarReceiptPrinterCharacterExpansion)expansion {
-    char command[] = {0x1d, 0x21, expansion};
-    
-    [self.buffer appendBytes:command length:sizeof(command)];
+    switch(expansion) {
+        case RMLStarReceiptPrinterCharacterExpansionNone:
+            [self.builder appendMultiple:1 height: 1];
+            break;
+        case RMLStarReceiptPrinterCharacterExpansionDoubleWidthDoubleHeight:
+            [self.builder appendMultiple:2 height: 2];
+            break;
+        case RMLStarReceiptPrinterCharacterExpansionSingleWidthDoubleHeight:
+            [self.builder appendMultiple:1 height: 2];
+            break;
+    }
 }
 
 - (void)setTextEmphasis:(RMLStarReceiptPrinterTextEmphasis)emphasis {
-    char command[] = {0x1b, 0x45, emphasis};
-    
-    [self.buffer appendBytes:command length:sizeof(command)];
+    switch(emphasis) {
+        case RMLStarReceiptPrinterTextEmphasisOn:
+            [self.builder appendEmphasis:YES];
+            break;
+        case RMLStarReceiptPrinterTextEmphasisOff:
+            [self.builder appendEmphasis:NO];
+            break;
+    }
 }
 
 - (void)sendText:(NSString *)text {
-    [self.buffer appendData:[text dataUsingEncoding:NSASCIIStringEncoding]];
+    [self.builder appendData:[text dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
+- (void)sendTextAlignedLeft:(NSString *)textLeft alignedRight:(NSString *)textRight {
+    char length = textLeft.length + textRight.length;
+    char space_length = self.paperWidthInCharacters - length;
+    
+    NSString *space = [@"" stringByPaddingToLength:space_length withString:@" " startingAtIndex:0];
+    
+    [self sendText:[NSString stringWithFormat:@"%@%@%@", textLeft, space, textRight]];
+}
+
+- (void)sendTextAlignedLeft:(NSString *)textLeft alignedRightDoubleWidthDoubleHeight:(NSString *)textRight {
+    char length = textLeft.length + textRight.length * 2;
+    char space_length = self.paperWidthInCharacters - length;
+    
+    NSString *space = [@"" stringByPaddingToLength:space_length withString:@" " startingAtIndex:0];
+    
+    [self sendText:[NSString stringWithFormat:@"%@%@", textLeft, space]];
+    
+    [self setCharacterExpansion:RMLStarReceiptPrinterCharacterExpansionDoubleWidthDoubleHeight];
+    
+    [self sendText:textRight];
+    
+    [self setCharacterExpansion:RMLStarReceiptPrinterCharacterExpansionNone];
 }
 
 - (void)sendSeparator {
-    NSString *separator = [@"" stringByPaddingToLength:32 withString:@"-" startingAtIndex:0];
+    NSString *separator = [@"" stringByPaddingToLength:self.paperWidthInCharacters withString:@"-" startingAtIndex:0];
     
     separator = [separator stringByAppendingString:@"\n"];
     
@@ -141,6 +236,8 @@
     if (!self.port.connected) {
         return NO;
     }
+    
+    self.buffer = [self.builder commands];
 
     unsigned char *commands = (unsigned char *)malloc([self.buffer length]);
     [self.buffer getBytes:commands length:[self.buffer length]];

@@ -28,4 +28,22 @@
     return [[self alloc] initWithPortName:defaultPortName macAddress:nil modelName:nil];
 }
 
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super init];
+    
+    if (self) {
+        self.portName = [coder decodeObjectForKey:@"portName"];
+        self.macAddress = [coder decodeObjectForKey:@"macAddress"];
+        self.modelName = [coder decodeObjectForKey:@"modelName"];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.portName forKey:@"portName"];
+    [coder encodeObject:self.macAddress forKey:@"macAddress"];
+    [coder encodeObject:self.modelName forKey:@"modelName"];
+}
+
 @end
