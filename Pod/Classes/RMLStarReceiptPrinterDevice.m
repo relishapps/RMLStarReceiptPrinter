@@ -28,6 +28,16 @@
     return [[self alloc] initWithPortName:defaultPortName macAddress:nil modelName:nil];
 }
 
+- (BOOL)isEqual:(id)object {
+    if (![object isKindOfClass:self.class]) {
+        return NO;
+    }
+    
+    RMLStarReceiptPrinterDevice *other = object;
+    
+    return [self.portName isEqual:other.portName];
+}
+
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super init];
     
