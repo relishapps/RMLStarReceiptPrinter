@@ -34,7 +34,7 @@
         NSString *settings;
         StarIoExtEmulation emulation;
         
-        if ([device.modelName isEqualToString:@"SM-S220"] || [device.modelName isEqualToString:@"SM-S230"]) {
+        if ([device.modelName isEqualToString:@"SM-S220"]) {
             NSLog(@"Printer emulation: EscPos");
             emulation = StarIoExtEmulationEscPosMobile;
             settings = @"mini";
