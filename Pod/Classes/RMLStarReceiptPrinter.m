@@ -34,10 +34,14 @@
         NSString *settings;
         StarIoExtEmulation emulation;
         
-        if ([device.modelName isEqualToString:@"SM-S220"] || [device.modelName isEqualToString:@"SM-S230"]) {
+        if ([device.modelName isEqualToString:@"SM-S220"]) {
             NSLog(@"Printer emulation: EscPos");
             emulation = StarIoExtEmulationEscPosMobile;
             settings = @"mini";
+        } else if ([device.modelName isEqualToString:@"SM-S230"]) {
+            NSLog(@"Printer SM-S230. Emulation: EscPos");
+            emulation = StarIoExtEmulationEscPosMobile;
+            settings = @"Portable";
         } else {
             NSLog(@"Printer emulation: StarPRNT");
             emulation = StarIoExtEmulationStarPRNT;
