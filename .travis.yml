@@ -3,12 +3,8 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
 podfile: Example/Podfile
+xcode_workspace: Example/RMLStarReceiptPrinter.xcworkspace
+xcode_scheme: RMLStarReceiptPrinter
 script:
-- xctool -workspace Example/RMLStarReceiptPrinter.xcworkspace -scheme RMLStarReceiptPrinter -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-- pod lib lint --quick
+ pod lib lint --quick
