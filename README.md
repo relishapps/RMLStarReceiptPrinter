@@ -1,6 +1,6 @@
 # RMLStarReceiptPrinter
 
-[![CI Status](http://img.shields.io/travis/relishmedia/RMLStarReceiptPrinter.svg?style=flat)](https://travis-ci.org/relishmedia/RMLStarReceiptPrinter)
+[![Build Status](https://travis-ci.org/relishapps/RMLStarReceiptPrinter.svg?branch=master)](https://travis-ci.org/relishapps/RMLStarReceiptPrinter)
 [![Version](https://img.shields.io/cocoapods/v/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 [![License](https://img.shields.io/cocoapods/l/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
 [![Platform](https://img.shields.io/cocoapods/p/RMLStarReceiptPrinter.svg?style=flat)](http://cocoapods.org/pods/RMLStarReceiptPrinter)
