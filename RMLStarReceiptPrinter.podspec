@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        RMLStarReceiptPrinter makes printing receipts a breeze!
                        DESC
-  s.homepage         = "https://github.com/relishmedia/RMLStarReceiptPrinter"
+  s.homepage         = "https://github.com/relishapps/RMLStarReceiptPrinter"
   s.license          = 'MIT'
-  s.author           = { "Pawel Decowski" => "pawel@relish.io" }
-  s.source           = { :git => "https://github.com/relishmedia/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
+  s.author           = { "Pawel Decowski" => "pawel@relishapps.com" }
+  s.source           = { :git => "https://github.com/relishapps/RMLStarReceiptPrinter.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/relishmedia'
 
   s.platform     = :ios, '8.4'
