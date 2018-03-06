@@ -19,7 +19,7 @@
  *
  *  The current status of the printer
  */
-typedef NS_ENUM(char, RMLStarReceiptPrinterStatus){
+typedef NS_ENUM(char, RMLStarReceiptPrinterStatus) {
     /*!
      *  The printer is either powered off, or not connected to the device
      */
@@ -47,7 +47,7 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterStatus){
  *
  *  An option for changing the height and/or width of the next charaters sent to the printer
  */
-typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterExpansion){
+typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterExpansion) {
     /*!
      *  Resets to default width and height
      */
@@ -67,7 +67,7 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterExpansion){
  *
  *  Equal to setting the text to bold.
  */
-typedef NS_ENUM(char, RMLStarReceiptPrinterTextEmphasis){
+typedef NS_ENUM(char, RMLStarReceiptPrinterTextEmphasis) {
     /*!
      *  Turns off the emphasis
      */
@@ -83,7 +83,7 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterTextEmphasis){
  *
  *  Values to set the alignment of next text sent to the printer.
  */
-typedef NS_ENUM(char, RMLStarReceiptPrinterTextAlignment){
+typedef NS_ENUM(char, RMLStarReceiptPrinterTextAlignment) {
     /*!
      *  Left alignment
      */
@@ -103,7 +103,7 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterTextAlignment){
  *
  *  Values to set the character set of the next text sent to the printer to.
  */
-typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){
+typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet) {
     /*!
      *  USA character set
      */
@@ -148,6 +148,28 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){
      *  Denmark 2 character set
      */
     RMLStarReceiptPrinterCharacterSetDenmark2
+};
+
+typedef NS_ENUM(char, RMLStarReceiptPrinterCodePage) {
+    RMLStarReceiptPrinterCodePage437,
+    RMLStarReceiptPrinterCodePage737,
+    RMLStarReceiptPrinterCodePage772,
+    RMLStarReceiptPrinterCodePage774,
+    RMLStarReceiptPrinterCodePage851,
+    RMLStarReceiptPrinterCodePage852,
+    RMLStarReceiptPrinterCodePage855,
+    RMLStarReceiptPrinterCodePage857,
+    RMLStarReceiptPrinterCodePage858,
+    RMLStarReceiptPrinterCodePage860,
+    RMLStarReceiptPrinterCodePage861,
+    RMLStarReceiptPrinterCodePage862,
+    RMLStarReceiptPrinterCodePage863,
+    RMLStarReceiptPrinterCodePage864,
+    RMLStarReceiptPrinterCodePage865,
+    RMLStarReceiptPrinterCodePage866,
+    RMLStarReceiptPrinterCodePage869,
+    RMLStarReceiptPrinterCodePage874,
+    RMLStarReceiptPrinterCodePage928
 };
 
 @interface RMLStarReceiptPrinter : NSObject
@@ -195,6 +217,12 @@ typedef NS_ENUM(char, RMLStarReceiptPrinterCharacterSet){
  *  @param characterSet RMLStarReceiptPrinterCharacterSet on the character set you want
  */
 - (void)setCharacterSet:(RMLStarReceiptPrinterCharacterSet)characterSet;
+
+/*!
+ * Set the code page
+ * @param codePage RMLStarReceiptPrinterCodePage
+ */
+- (void)setCodePage:(RMLStarReceiptPrinterCodePage)codePage;
 
 /*!
  *  Using the RMLStarReceiptPrinterTextEmphasis, you can set whether the following test is emphasised or not

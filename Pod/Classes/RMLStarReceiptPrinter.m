@@ -34,6 +34,8 @@
         NSString *settings;
         StarIoExtEmulation emulation;
         
+        NSLog(@"Device model: %@", device.modelName);
+        
         if ([device.modelName isEqualToString:@"SM-S220"] || [device.modelName isEqualToString:@"SM-S230"]) {
             NSLog(@"Printer emulation: EscPos");
             emulation = StarIoExtEmulationEscPosMobile;
@@ -153,6 +155,10 @@
             [self.builder appendInternational:SCBInternationalTypeGermany];
             break;
     }
+}
+
+- (void)setCodePage:(RMLStarReceiptPrinterCodePage)codePage {
+    [NSException raise:@"Method not implemented" format:@"Method not implemented"];
 }
 
 - (void)setTextAlignment:(RMLStarReceiptPrinterTextAlignment)alignment {
