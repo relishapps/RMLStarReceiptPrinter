@@ -19,12 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     self.refreshControl = [[UIRefreshControl alloc] init];
@@ -37,13 +31,7 @@
     [self searchForPrinters];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)searchForPrinters {
-    
     self.tableView.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
     self.printers = [RMLStarReceiptPrinter availableDevices];
     [self.tableView reloadData];
@@ -54,11 +42,11 @@
     NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
     paragraphStyle.alignment = NSTextAlignmentCenter;
     
-    NSString *about = [NSString stringWithFormat:@"RMLStarReceiptPrinter v%@\n\n(c) 2014–2015 Relish Media Ltd\n\nhttps://relish.io", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    NSString *about = [NSString stringWithFormat:@"RMLStarReceiptPrinter v%@\n\n(c) 2014–2018 Relish Media Ltd\n\nhttps://relishapps.com", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"About" message:about preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *web = [UIAlertAction actionWithTitle:@"Visit website" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://relish.io"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://relishapps.com"]];
     }];
     [alert addAction:web];
     
@@ -117,14 +105,20 @@
 
 - (void)printWithDevice:(RMLStarReceiptPrinterDevice *)device {
     NSLog(@"StarIO SDK version: %@", [RMLStarReceiptPrinter starIOVersion]);
-    NSLog(@"Device: %@", device.portName);
+    NSLog(@"Device: %@", device.modelName);
     RMLStarReceiptPrinter *printer = [[RMLStarReceiptPrinter alloc] initWithDevice:device];
     
     NSLog(@"Printer: %@", printer);
     
     [printer setTextAlignment:RMLStarReceiptPrinterTextAlignmentCenter];
     
-    [printer sendText:[NSString stringWithFormat:@"\n\nRMLStarReceiptPrinter v%@\n\n(c) 2014-2015 Relish Media Ltd\n\nhttps://relish.io\n\n\n\n\n", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+    [printer setTextEmphasis:RMLStarReceiptPrinterTextEmphasisOn];
+    
+    [printer sendText:@"Hello, world!\n\n"];
+    
+    [printer setTextEmphasis:RMLStarReceiptPrinterTextEmphasisOff];
+    
+    [printer sendText:[NSString stringWithFormat:@"\n\nRMLStarReceiptPrinter v%@\n\n(c) 2014-2018 Relish Media Ltd\n\nhttps://relishapps.com\n\n\n\n\n", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
     
     [printer print];
 }
